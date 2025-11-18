@@ -70,6 +70,49 @@ import Layout from "../layouts/Layout.astro";
             Performance declines naturally over time. Counter this by reviewing dependencies, removing dead code, resetting budgets, and auditing critical flows on a predictable cadence.
           </li>
         </ol>
+
+        <h2 class="mt-12">The Fast by Default Cycle</h2>
+
+        <p>
+          The cycle has five stages. Together they create a continuous loop that keeps systems fast as they grow.
+        </p>
+
+        <ol class="space-y-4">
+          <li>
+            <strong>Architect</strong><br />
+            Start with designs that make fast behaviour possible. Reduce critical-path work, keep dependencies shallow, plan caching and data loading early, and choose rendering strategies that match your platform.
+          </li>
+          <li>
+            <strong>Implement</strong><br />
+            Write code with performance feedback available at every step. Developers should see long tasks, heavy bundles, slow queries, and blocking operations as they build features.
+          </li>
+          <li>
+            <strong>Verify</strong><br />
+            Check performance automatically in CI. Enforce budgets, run key tests, detect regressions, and block changes that would slow users down. Verification should be consistent and predictable.
+          </li>
+          <li>
+            <strong>Observe</strong><br />
+            Measure what real users experience in production. Track Core Web Vitals, latency, slow interactions, and device-level performance. Use observability tools to understand how the system behaves at scale.
+          </li>
+          <li>
+            <strong>Refine</strong><br />
+            Feed real-world data back into architecture and development. Fix bottlenecks, reset budgets when needed, simplify flows, and reduce complexity. Refinement keeps systems fast over time.
+          </li>
+        </ol>
+
+        <hr class="my-8 border-gray-300" />
+
+        <h3 class="text-lg font-semibold mt-6">How the Cycle Works</h3>
+
+        <p>It repeats forever.</p>
+
+        <p>
+          Architect → Implement → Verify → Observe → Refine → back to Architect.
+        </p>
+
+        <p>
+          A team that follows this cycle does not wait for incidents. Speed stays healthy because the loop runs as part of normal work.
+        </p>
       </article>
     </div>
   </main>
