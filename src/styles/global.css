@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
