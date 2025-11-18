@@ -77,6 +77,57 @@ import Layout from "../layouts/Layout.astro";
           The cycle has five stages. Together they create a continuous loop that keeps systems fast as they grow.
         </p>
 
+        <div class="not-prose my-12 flex justify-center">
+          <svg width="500" height="500" viewBox="0 0 500 500" class="max-w-full h-auto">
+            <!-- Center circle -->
+            <circle cx="250" cy="250" r="60" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+            <text x="250" y="245" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">Fast by</text>
+            <text x="250" y="262" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">Default</text>
+
+            <!-- Architect (top) -->
+            <circle cx="250" cy="80" r="55" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+            <text x="250" y="88" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Architect</text>
+
+            <!-- Implement (top right) -->
+            <circle cx="400" cy="150" r="55" fill="#334155" stroke="#475569" stroke-width="2"/>
+            <text x="400" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Implement</text>
+
+            <!-- Verify (bottom right) -->
+            <circle cx="400" cy="350" r="55" fill="#475569" stroke="#64748b" stroke-width="2"/>
+            <text x="400" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Verify</text>
+
+            <!-- Observe (bottom left) -->
+            <circle cx="100" cy="350" r="55" fill="#64748b" stroke="#94a3b8" stroke-width="2"/>
+            <text x="100" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Observe</text>
+
+            <!-- Refine (top left) -->
+            <circle cx="100" cy="150" r="55" fill="#94a3b8" stroke="#cbd5e1" stroke-width="2"/>
+            <text x="100" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Refine</text>
+
+            <!-- Arrows -->
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#334155" />
+              </marker>
+            </defs>
+
+            <!-- Arrow from Architect to Implement -->
+            <path d="M 295 100 Q 340 110 355 135" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+            <!-- Arrow from Implement to Verify -->
+            <path d="M 400 205 L 400 295" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+            <!-- Arrow from Verify to Observe -->
+            <path d="M 355 365 Q 250 380 145 365" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+            <!-- Arrow from Observe to Refine -->
+            <path d="M 100 295 L 100 205" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+            <!-- Arrow from Refine to Architect -->
+            <path d="M 145 135 Q 190 110 205 100" fill="none" stroke="#334155" stroke-width="3" marker-end="url(#arrowhead)"/>
+          </svg>
+        </div>
+
         <ol class="space-y-4">
           <li>
             <strong>Architect</strong><br />
