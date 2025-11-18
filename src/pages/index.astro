@@ -3,17 +3,17 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Fast by Default">
-  <main class="min-h-screen bg-stone-50">
+  <main class="min-h-screen bg-stone-50 dark:bg-stone-950">
 
     <!-- Magazine Masthead -->
-    <div class="border-b-4 border-double border-stone-900 bg-white">
+    <div class="border-b-4 border-double border-stone-900 dark:border-stone-100 bg-white dark:bg-stone-900">
       <div class="max-w-6xl mx-auto px-6 py-8">
         <div class="text-center">
-          <div class="text-xs font-sans tracking-[0.3em] uppercase text-stone-500 mb-3">Performance Engineering</div>
-          <h1 class="font-display text-7xl sm:text-8xl font-black text-stone-900 tracking-tight mb-3">
+          <div class="text-xs font-sans tracking-[0.3em] uppercase text-stone-500 dark:text-stone-400 mb-3">Performance Engineering</div>
+          <h1 class="font-display text-7xl sm:text-8xl font-black text-stone-900 dark:text-stone-50 tracking-tight mb-3">
             Fast by Default
           </h1>
-          <div class="flex items-center justify-center gap-4 text-xs font-sans tracking-wider uppercase text-stone-500">
+          <div class="flex items-center justify-center gap-4 text-xs font-sans tracking-wider uppercase text-stone-500 dark:text-stone-400">
             <span>—</span>
             <span>Build Fast, Stay Fast</span>
             <span>—</span>
@@ -27,22 +27,22 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Kicker -->
       <div class="text-center mb-6">
-        <span class="inline-block px-4 py-1 bg-stone-900 text-white text-xs font-sans tracking-[0.2em] uppercase">
+        <span class="inline-block px-4 py-1 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-xs font-sans tracking-[0.2em] uppercase">
           The Philosophy
         </span>
       </div>
 
       <!-- Lead Paragraph with Drop Cap -->
       <div class="mb-12">
-        <p class="text-2xl leading-relaxed text-stone-800 first-letter:text-7xl first-letter:font-display first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:leading-none">
+        <p class="text-2xl leading-relaxed text-stone-800 dark:text-stone-200 first-letter:text-7xl first-letter:font-display first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:leading-none">
           Fast by Default is a software development approach where speed and responsiveness are built into a system from the beginning, rather than added in a rescue mission after users complain. It treats performance as a core requirement that guides architecture, code, testing, deployment, and team habits, so that fast behaviour is the natural result of everyday work.
         </p>
       </div>
 
       <!-- Pull Quote -->
-      <div class="my-16 py-8 border-t-2 border-b-2 border-stone-300">
+      <div class="my-16 py-8 border-t-2 border-b-2 border-stone-300 dark:border-stone-600">
         <blockquote class="text-center">
-          <p class="font-display italic text-3xl sm:text-4xl text-stone-900 leading-snug max-w-3xl mx-auto">
+          <p class="font-display italic text-3xl sm:text-4xl text-stone-900 dark:text-stone-100 leading-snug max-w-3xl mx-auto">
             "Fast by Default is not a tool or framework. It is a disciplined way of building software that stays fast as it grows."
           </p>
         </blockquote>
@@ -50,29 +50,29 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Criteria Section -->
       <section class="mb-20">
-        <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 mb-8 pb-4 border-b-2 border-stone-300">
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-8 pb-4 border-b-2 border-stone-300 dark:border-stone-600">
           A System Is Fast by Default When:
         </h2>
 
-        <ol class="space-y-6 text-lg leading-relaxed text-stone-800">
+        <ol class="space-y-6 text-lg leading-relaxed text-stone-800 dark:text-stone-200">
           <li class="flex gap-4">
-            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400">1</span>
+            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400 dark:text-stone-500">1</span>
             <span class="pt-1">Architecture creates room for speed by avoiding designs that guarantee slow behaviour.</span>
           </li>
           <li class="flex gap-4">
-            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400">2</span>
+            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400 dark:text-stone-500">2</span>
             <span class="pt-1">Developers see performance impact during daily work, not weeks later.</span>
           </li>
           <li class="flex gap-4">
-            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400">3</span>
+            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400 dark:text-stone-500">3</span>
             <span class="pt-1">Budgets and checks run automatically, preventing regressions from reaching production.</span>
           </li>
           <li class="flex gap-4">
-            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400">4</span>
+            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400 dark:text-stone-500">4</span>
             <span class="pt-1">Real user data shapes decisions, and teams respond based on what users actually experience.</span>
           </li>
           <li class="flex gap-4">
-            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400">5</span>
+            <span class="flex-shrink-0 font-display text-3xl font-bold text-stone-400 dark:text-stone-500">5</span>
             <span class="pt-1">Speed is a shared responsibility, with engineers across roles protecting responsiveness for all users, devices, and regions.</span>
           </li>
         </ol>
@@ -82,69 +82,69 @@ import Layout from "../layouts/Layout.astro";
       <section class="mb-20">
         <div class="text-center mb-12">
           <div class="inline-block">
-            <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 mb-3">
+            <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-3">
               The Seven Principles
             </h2>
-            <div class="h-1 bg-stone-900"></div>
+            <div class="h-1 bg-stone-900 dark:bg-stone-100"></div>
           </div>
         </div>
 
         <!-- Two Column Layout for Principles -->
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 border-l-4 border-stone-900 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-900 dark:border-stone-100 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">I</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Design for Speed Before You Write Code</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">I</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Design for Speed Before You Write Code</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Make performance a requirement during planning and architecture. Avoid chains of work, slow dependencies, and designs that guarantee delays.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Make performance a requirement during planning and architecture. Avoid chains of work, slow dependencies, and designs that guarantee delays.</p>
           </div>
 
-          <div class="bg-white p-8 border-l-4 border-stone-800 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-800 dark:border-stone-200 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">II</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Make Performance Visible During Development</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">II</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Make Performance Visible During Development</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Use tools and workflows that show how each change affects speed. Developers should see slow tasks, blocking operations, and heavy assets as they work.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Use tools and workflows that show how each change affects speed. Developers should see slow tasks, blocking operations, and heavy assets as they work.</p>
           </div>
 
-          <div class="bg-white p-8 border-l-4 border-stone-700 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-700 dark:border-stone-300 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">III</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Protect the Experience with Clear Budgets</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">III</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Protect the Experience with Clear Budgets</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Set limits for the things that slow users down. Enforce budgets for JavaScript size, API latency, startup cost, memory use, and render time.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Set limits for the things that slow users down. Enforce budgets for JavaScript size, API latency, startup cost, memory use, and render time.</p>
           </div>
 
-          <div class="bg-white p-8 border-l-4 border-stone-600 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-600 dark:border-stone-300 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">IV</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Optimise Complete User Flows</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">IV</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Optimise Complete User Flows</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Users experience journeys, not single pages. Test and improve full flows, including transitions, loading states, and interactions between steps.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Users experience journeys, not single pages. Test and improve full flows, including transitions, loading states, and interactions between steps.</p>
           </div>
 
-          <div class="bg-white p-8 border-l-4 border-stone-500 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-500 dark:border-stone-400 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">V</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Use Real-World Data to Guide Decisions</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">V</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Use Real-World Data to Guide Decisions</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Base priorities on what users actually feel. Track key metrics in production, including Core Web Vitals, slow interactions, and crashes on real devices.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Base priorities on what users actually feel. Track key metrics in production, including Core Web Vitals, slow interactions, and crashes on real devices.</p>
           </div>
 
-          <div class="bg-white p-8 border-l-4 border-stone-400 shadow-sm">
+          <div class="bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-400 dark:border-stone-400 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">VI</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Treat Performance as a Shared Responsibility</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">VI</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Treat Performance as a Shared Responsibility</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Speed is a team outcome. Everyone plays a part, from backend and frontend to design, QA, and DevOps.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Speed is a team outcome. Everyone plays a part, from backend and frontend to design, QA, and DevOps.</p>
           </div>
 
-          <div class="md:col-span-2 bg-white p-8 border-l-4 border-stone-300 shadow-sm">
+          <div class="md:col-span-2 bg-white dark:bg-stone-800 p-8 border-l-4 border-stone-300 dark:border-stone-500 shadow-sm">
             <div class="flex items-baseline gap-3 mb-3">
-              <span class="font-display text-5xl font-bold text-stone-300">VII</span>
-              <h3 class="font-display text-xl font-bold text-stone-900">Prevent Decay Through Regular Cleanup and Review</h3>
+              <span class="font-display text-5xl font-bold text-stone-300 dark:text-stone-600">VII</span>
+              <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100">Prevent Decay Through Regular Cleanup and Review</h3>
             </div>
-            <p class="text-stone-700 leading-relaxed">Performance declines naturally over time. Counter this by reviewing dependencies, removing dead code, resetting budgets, and auditing critical flows on a predictable cadence.</p>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Performance declines naturally over time. Counter this by reviewing dependencies, removing dead code, resetting budgets, and auditing critical flows on a predictable cadence.</p>
           </div>
         </div>
       </section>
@@ -152,103 +152,116 @@ import Layout from "../layouts/Layout.astro";
       <!-- Section Divider -->
       <div class="flex items-center justify-center my-16">
         <div class="flex gap-2">
-          <div class="w-2 h-2 bg-stone-900 rotate-45"></div>
-          <div class="w-2 h-2 bg-stone-900 rotate-45"></div>
-          <div class="w-2 h-2 bg-stone-900 rotate-45"></div>
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
         </div>
       </div>
 
       <!-- Cycle Section -->
-      <section class="mb-20 bg-white p-10 border-2 border-stone-900">
+      <section class="mb-20 bg-white dark:bg-stone-800 p-10 border-2 border-stone-900 dark:border-stone-100">
         <div class="text-center mb-8">
-          <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 mb-2">
+          <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-2">
             The Fast by Default Cycle
           </h2>
-          <p class="font-sans text-sm tracking-wider uppercase text-stone-500">
+          <p class="font-sans text-sm tracking-wider uppercase text-stone-500 dark:text-stone-400">
             A Continuous Loop of Five Stages
           </p>
         </div>
 
-        <p class="text-lg text-center text-stone-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-lg text-center text-stone-700 dark:text-stone-300 mb-12 max-w-3xl mx-auto leading-relaxed">
           The cycle has five stages. Together they create a continuous loop that keeps systems fast as they grow.
         </p>
 
         <div class="my-12 flex justify-center">
-          <svg width="500" height="500" viewBox="0 0 500 500" class="max-w-full h-auto">
-            <!-- Center circle -->
+          <!-- Light Mode SVG -->
+          <svg width="500" height="500" viewBox="0 0 500 500" class="max-w-full h-auto dark:hidden">
             <circle cx="250" cy="250" r="60" fill="#fafaf9" stroke="#1c1917" stroke-width="3"/>
             <text x="250" y="245" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1917">Fast by</text>
             <text x="250" y="262" text-anchor="middle" font-size="14" font-weight="600" fill="#1c1917">Default</text>
-
-            <!-- Architect (top) -->
             <circle cx="250" cy="80" r="55" fill="#1c1917" stroke="#292524" stroke-width="2"/>
             <text x="250" y="88" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Architect</text>
-
-            <!-- Implement (top right) -->
             <circle cx="400" cy="150" r="55" fill="#292524" stroke="#44403c" stroke-width="2"/>
             <text x="400" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Implement</text>
-
-            <!-- Verify (bottom right) -->
             <circle cx="400" cy="350" r="55" fill="#44403c" stroke="#57534e" stroke-width="2"/>
             <text x="400" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Verify</text>
-
-            <!-- Observe (bottom left) -->
             <circle cx="100" cy="350" r="55" fill="#57534e" stroke="#78716c" stroke-width="2"/>
             <text x="100" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Observe</text>
-
-            <!-- Refine (top left) -->
             <circle cx="100" cy="150" r="55" fill="#78716c" stroke="#a8a29e" stroke-width="2"/>
             <text x="100" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Refine</text>
-
-            <!-- Arrows -->
             <defs>
               <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                 <polygon points="0 0, 10 3, 0 6" fill="#1c1917" />
               </marker>
             </defs>
-
             <path d="M 295 100 Q 340 110 355 135" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead)"/>
             <path d="M 400 205 L 400 295" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead)"/>
             <path d="M 355 365 Q 250 380 145 365" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead)"/>
             <path d="M 100 295 L 100 205" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead)"/>
             <path d="M 145 135 Q 190 110 205 100" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead)"/>
           </svg>
+          <!-- Dark Mode SVG -->
+          <svg width="500" height="500" viewBox="0 0 500 500" class="max-w-full h-auto hidden dark:block">
+            <circle cx="250" cy="250" r="60" fill="#1c1917" stroke="#e7e5e4" stroke-width="3"/>
+            <text x="250" y="245" text-anchor="middle" font-size="14" font-weight="600" fill="#e7e5e4">Fast by</text>
+            <text x="250" y="262" text-anchor="middle" font-size="14" font-weight="600" fill="#e7e5e4">Default</text>
+            <circle cx="250" cy="80" r="55" fill="#e7e5e4" stroke="#d6d3d1" stroke-width="2"/>
+            <text x="250" y="88" text-anchor="middle" font-size="16" font-weight="bold" fill="#1c1917">Architect</text>
+            <circle cx="400" cy="150" r="55" fill="#d6d3d1" stroke="#a8a29e" stroke-width="2"/>
+            <text x="400" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="#1c1917">Implement</text>
+            <circle cx="400" cy="350" r="55" fill="#a8a29e" stroke="#78716c" stroke-width="2"/>
+            <text x="400" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="#1c1917">Verify</text>
+            <circle cx="100" cy="350" r="55" fill="#78716c" stroke="#57534e" stroke-width="2"/>
+            <text x="100" y="358" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Observe</text>
+            <circle cx="100" cy="150" r="55" fill="#57534e" stroke="#44403c" stroke-width="2"/>
+            <text x="100" y="158" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Refine</text>
+            <defs>
+              <marker id="arrowhead-dark" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#e7e5e4" />
+              </marker>
+            </defs>
+            <path d="M 295 100 Q 340 110 355 135" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-dark)"/>
+            <path d="M 400 205 L 400 295" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-dark)"/>
+            <path d="M 355 365 Q 250 380 145 365" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-dark)"/>
+            <path d="M 100 295 L 100 205" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-dark)"/>
+            <path d="M 145 135 Q 190 110 205 100" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-dark)"/>
+          </svg>
         </div>
 
         <div class="space-y-6 mb-10">
-          <div class="border-l-8 border-stone-900 pl-6 py-3 bg-stone-50">
-            <h3 class="font-display font-bold text-stone-900 text-xl mb-2">1. Architect</h3>
-            <p class="text-stone-700 leading-relaxed">Start with designs that make fast behaviour possible. Reduce critical-path work, keep dependencies shallow, plan caching and data loading early.</p>
+          <div class="border-l-8 border-stone-900 dark:border-stone-100 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
+            <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-xl mb-2">1. Architect</h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Start with designs that make fast behaviour possible. Reduce critical-path work, keep dependencies shallow, plan caching and data loading early.</p>
           </div>
 
-          <div class="border-l-8 border-stone-800 pl-6 py-3 bg-stone-50">
-            <h3 class="font-display font-bold text-stone-900 text-xl mb-2">2. Implement</h3>
-            <p class="text-stone-700 leading-relaxed">Write code with performance feedback available at every step. Developers should see long tasks, heavy bundles, and blocking operations as they build.</p>
+          <div class="border-l-8 border-stone-800 dark:border-stone-200 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
+            <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-xl mb-2">2. Implement</h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Write code with performance feedback available at every step. Developers should see long tasks, heavy bundles, and blocking operations as they build.</p>
           </div>
 
-          <div class="border-l-8 border-stone-700 pl-6 py-3 bg-stone-50">
-            <h3 class="font-display font-bold text-stone-900 text-xl mb-2">3. Verify</h3>
-            <p class="text-stone-700 leading-relaxed">Check performance automatically in CI. Enforce budgets, run tests, detect regressions, and block changes that would slow users down.</p>
+          <div class="border-l-8 border-stone-700 dark:border-stone-300 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
+            <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-xl mb-2">3. Verify</h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Check performance automatically in CI. Enforce budgets, run tests, detect regressions, and block changes that would slow users down.</p>
           </div>
 
-          <div class="border-l-8 border-stone-600 pl-6 py-3 bg-stone-50">
-            <h3 class="font-display font-bold text-stone-900 text-xl mb-2">4. Observe</h3>
-            <p class="text-stone-700 leading-relaxed">Measure what real users experience in production. Track Core Web Vitals, latency, slow interactions, and device-level performance at scale.</p>
+          <div class="border-l-8 border-stone-600 dark:border-stone-400 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
+            <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-xl mb-2">4. Observe</h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Measure what real users experience in production. Track Core Web Vitals, latency, slow interactions, and device-level performance at scale.</p>
           </div>
 
-          <div class="border-l-8 border-stone-500 pl-6 py-3 bg-stone-50">
-            <h3 class="font-display font-bold text-stone-900 text-xl mb-2">5. Refine</h3>
-            <p class="text-stone-700 leading-relaxed">Feed real-world data back into architecture and development. Fix bottlenecks, reset budgets, simplify flows, and reduce complexity.</p>
+          <div class="border-l-8 border-stone-500 dark:border-stone-400 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
+            <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-xl mb-2">5. Refine</h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">Feed real-world data back into architecture and development. Fix bottlenecks, reset budgets, simplify flows, and reduce complexity.</p>
           </div>
         </div>
 
-        <div class="bg-stone-100 p-6 border-2 border-stone-300">
-          <h3 class="font-display text-xl font-bold text-stone-900 mb-3">How the Cycle Works</h3>
-          <p class="text-stone-800 mb-2 font-semibold">It repeats forever.</p>
-          <p class="font-sans text-sm text-stone-600 mb-3 tracking-wide">
+        <div class="bg-stone-100 dark:bg-stone-900 p-6 border-2 border-stone-300 dark:border-stone-600">
+          <h3 class="font-display text-xl font-bold text-stone-900 dark:text-stone-100 mb-3">How the Cycle Works</h3>
+          <p class="text-stone-800 dark:text-stone-200 mb-2 font-semibold">It repeats forever.</p>
+          <p class="font-sans text-sm text-stone-600 dark:text-stone-400 mb-3 tracking-wide">
             Architect → Implement → Verify → Observe → Refine → back to Architect
           </p>
-          <p class="text-stone-700 leading-relaxed">
+          <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
             A team that follows this cycle does not wait for incidents. Speed stays healthy because the loop runs as part of normal work.
           </p>
         </div>
@@ -257,219 +270,219 @@ import Layout from "../layouts/Layout.astro";
     </article>
 
     <!-- Checklist Section - Full Width Magazine Spread -->
-    <section class="bg-white border-t-4 border-b-4 border-double border-stone-900 py-16">
+    <section class="bg-white dark:bg-stone-900 border-t-4 border-b-4 border-double border-stone-900 dark:border-stone-100 py-16">
       <div class="max-w-6xl mx-auto px-6">
 
         <div class="text-center mb-12">
           <div class="inline-block">
-            <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 mb-3">
+            <h2 class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-3">
               Fast by Default Checklist
             </h2>
-            <div class="h-1 bg-stone-900"></div>
+            <div class="h-1 bg-stone-900 dark:bg-stone-100"></div>
           </div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <!-- Architecture -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-900">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-900 dark:border-stone-100">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Architecture
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Remove unnecessary round trips and sequential dependencies.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Remove unnecessary round trips and sequential dependencies.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Keep critical-path work shallow and predictable.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep critical-path work shallow and predictable.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Choose rendering and loading strategies that suit your platform.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Choose rendering and loading strategies that suit your platform.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Plan caching, preloading, and data shaping early.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Plan caching, preloading, and data shaping early.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Keep services and components small, stable, and easy to optimise.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep services and components small, stable, and easy to optimise.</span>
               </li>
             </ul>
           </div>
 
           <!-- Development -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-800">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-800 dark:border-stone-200">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Development
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Surface long tasks and blocking operations during coding.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Surface long tasks and blocking operations during coding.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Show bundle weight, API cost, and render time as part of normal work.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Show bundle weight, API cost, and render time as part of normal work.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Use profiling tools to spot regressions early.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use profiling tools to spot regressions early.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Treat third-party scripts and SDKs as high-risk additions.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Treat third-party scripts and SDKs as high-risk additions.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Keep complexity low, especially in frequently used code paths.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep complexity low, especially in frequently used code paths.</span>
               </li>
             </ul>
           </div>
 
           <!-- Code Review -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-700">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-700 dark:border-stone-300">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Code Review
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Check for unnecessary work on initialization.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Check for unnecessary work on initialization.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Look for new blocking operations, heavy assets, or slow queries.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Look for new blocking operations, heavy assets, or slow queries.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Confirm that changes respect existing budgets.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Confirm that changes respect existing budgets.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Flag hidden dependencies that add latency or load.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Flag hidden dependencies that add latency or load.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Require good loading states and resilient interaction patterns.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Require good loading states and resilient interaction patterns.</span>
               </li>
             </ul>
           </div>
 
           <!-- CI and Budgets -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-600">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-600 dark:border-stone-300">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               CI and Budgets
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Define budgets for JavaScript size, API latency, startup time, and more.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Define budgets for JavaScript size, API latency, startup time, and more.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Enforce these budgets automatically with predictable checks.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Enforce these budgets automatically with predictable checks.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Fail builds that slow down key metrics.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Fail builds that slow down key metrics.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Track historical performance to spot decay over time.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Track historical performance to spot decay over time.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Run both cold-start and warm-path tests.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Run both cold-start and warm-path tests.</span>
               </li>
             </ul>
           </div>
 
           <!-- Testing -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-500">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-500 dark:border-stone-400">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Testing
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Test complete flows, not only single pages or endpoints.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Test complete flows, not only single pages or endpoints.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Simulate real devices, networks, and geographic regions.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Simulate real devices, networks, and geographic regions.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Use lab tools for consistency and field tools for truth.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use lab tools for consistency and field tools for truth.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Test interactions, not just load times.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Test interactions, not just load times.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Check edge cases like empty states, slow endpoints, and offline scenarios.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Check edge cases like empty states, slow endpoints, and offline scenarios.</span>
               </li>
             </ul>
           </div>
 
           <!-- Observability -->
-          <div class="bg-stone-50 p-6 border-2 border-stone-400">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-400">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Observability
             </h3>
             <ul class="space-y-3">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Track Core Web Vitals, slow interactions, and long tasks in production.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Track Core Web Vitals, slow interactions, and long tasks in production.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Monitor backend latency, memory use, and service health.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Monitor backend latency, memory use, and service health.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Instrument the user flows that matter most.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Instrument the user flows that matter most.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Alert on user-visible issues, not internal noise.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Alert on user-visible issues, not internal noise.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Use production data to refine budgets and priorities.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use production data to refine budgets and priorities.</span>
               </li>
             </ul>
           </div>
 
           <!-- Team Habits - Full Width -->
-          <div class="md:col-span-2 lg:col-span-3 bg-stone-50 p-6 border-2 border-stone-300">
-            <h3 class="font-display text-2xl font-bold text-stone-900 mb-6 pb-3 border-b-2 border-stone-300">
+          <div class="md:col-span-2 lg:col-span-3 bg-stone-50 dark:bg-stone-800 p-6 border-2 border-stone-300 dark:border-stone-500">
+            <h3 class="font-display text-2xl font-bold text-stone-900 dark:text-stone-100 mb-6 pb-3 border-b-2 border-stone-300 dark:border-stone-600">
               Team Habits
             </h3>
             <ul class="grid md:grid-cols-2 gap-4">
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Include performance goals in planning and design reviews.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Include performance goals in planning and design reviews.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Run scheduled cleanup cycles to reduce complexity and dead code.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Run scheduled cleanup cycles to reduce complexity and dead code.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Keep dependencies healthy and up to date.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep dependencies healthy and up to date.</span>
               </li>
               <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Share ownership across frontend, backend, mobile, QA, and infrastructure.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Share ownership across frontend, backend, mobile, QA, and infrastructure.</span>
               </li>
               <li class="flex items-start gap-3 group md:col-span-2">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 rounded-none accent-stone-900 cursor-pointer" />
-                <span class="text-stone-800 leading-snug">Celebrate improvements and reinforce good patterns.</span>
+                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                <span class="text-stone-800 dark:text-stone-200 leading-snug">Celebrate improvements and reinforce good patterns.</span>
               </li>
             </ul>
           </div>
@@ -479,14 +492,14 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-900 text-stone-300 py-12 border-t-4 border-double border-stone-900">
+    <footer class="bg-stone-900 dark:bg-stone-950 text-stone-300 dark:text-stone-400 py-12 border-t-4 border-double border-stone-900 dark:border-stone-100">
       <div class="max-w-6xl mx-auto px-6 text-center">
         <div class="mb-4">
-          <div class="inline-block border-t-2 border-b-2 border-stone-600 py-2">
-            <p class="font-display text-2xl font-bold text-white">Fast by Default</p>
+          <div class="inline-block border-t-2 border-b-2 border-stone-600 dark:border-stone-400 py-2">
+            <p class="font-display text-2xl font-bold text-white dark:text-stone-100">Fast by Default</p>
           </div>
         </div>
-        <p class="font-sans text-xs tracking-wider uppercase text-stone-500">
+        <p class="font-sans text-xs tracking-wider uppercase text-stone-500 dark:text-stone-500">
           &copy; {new Date().getFullYear()}
         </p>
       </div>
