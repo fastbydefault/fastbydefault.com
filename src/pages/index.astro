@@ -164,6 +164,192 @@ import Layout from "../layouts/Layout.astro";
         <p>
           A team that follows this cycle does not wait for incidents. Speed stays healthy because the loop runs as part of normal work.
         </p>
+
+        <h2 class="mt-12">Fast by Default Checklist</h2>
+
+        <div class="not-prose space-y-6">
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Architecture</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Remove unnecessary round trips and sequential dependencies.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Keep critical-path work shallow and predictable.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Choose rendering and loading strategies that suit your platform.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Plan caching, preloading, and data shaping early.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Keep services and components small, stable, and easy to optimise.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Development</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Surface long tasks and blocking operations during coding.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Show bundle weight, API cost, and render time as part of normal work.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Use profiling tools to spot regressions early.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Treat third-party scripts and SDKs as high-risk additions.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Keep complexity low, especially in frequently used code paths.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Code Review</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Check for unnecessary work on initialization.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Look for new blocking operations, heavy assets, or slow queries.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Confirm that changes respect existing budgets.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Flag hidden dependencies that add latency or load.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Require good loading states and resilient interaction patterns.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">CI and Budgets</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Define budgets for JavaScript size, API latency, startup time, image weight, and database queries.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Enforce these budgets automatically with predictable checks.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Fail builds that slow down key metrics.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Track historical performance to spot decay over time.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Run both cold-start and warm-path tests.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Testing</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Test complete flows, not only single pages or endpoints.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Simulate real devices, networks, and geographic regions.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Use lab tools for consistency and field tools for truth.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Test interactions, not just load times.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Check edge cases like empty states, slow endpoints, and offline scenarios.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Observability</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Track Core Web Vitals, slow interactions, and long tasks in production.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Monitor backend latency, memory use, and service health.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Instrument the user flows that matter most.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Alert on user-visible issues, not internal noise.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Use production data to refine budgets and priorities.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-700 mb-3">Team Habits</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Include performance goals in planning and design reviews.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Run scheduled cleanup cycles to reduce complexity and dead code.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Keep dependencies healthy and up to date.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Share ownership across frontend, backend, mobile, QA, and infrastructure.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <input type="checkbox" class="mt-1 w-4 h-4 rounded border-gray-300" />
+                <span class="text-gray-700">Celebrate improvements and reinforce good patterns.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </article>
     </div>
   </main>
