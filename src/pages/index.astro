@@ -37,6 +37,39 @@ import Layout from "../layouts/Layout.astro";
         <p class="mt-8">
           Fast by Default is not a tool or framework. It is a disciplined way of building software that stays fast as it grows in features, traffic, and team size.
         </p>
+
+        <h2 class="mt-12">The Seven Principles of Fast by Default</h2>
+
+        <ol class="space-y-4">
+          <li>
+            <strong>Design for speed before you write code</strong><br />
+            Make performance a requirement during planning and architecture. Avoid chains of work, slow dependencies, and designs that guarantee delays.
+          </li>
+          <li>
+            <strong>Make performance visible during development</strong><br />
+            Use tools and workflows that show how each change affects speed. Developers should see slow tasks, blocking operations, and heavy assets as they work.
+          </li>
+          <li>
+            <strong>Protect the experience with clear budgets</strong><br />
+            Set limits for the things that slow users down. Enforce budgets for JavaScript size, API latency, startup cost, memory use, and render time. Let the tooling hold the line.
+          </li>
+          <li>
+            <strong>Optimise complete user flows, not isolated screens</strong><br />
+            Users experience journeys, not single pages or endpoints. Test and improve full flows, including the transitions, loading states, and interactions between steps.
+          </li>
+          <li>
+            <strong>Use real-world data to guide decisions</strong><br />
+            Base priorities on what users actually feel. Track key metrics in production, including Core Web Vitals, slow interactions, crashes, and long tasks on real devices and networks.
+          </li>
+          <li>
+            <strong>Treat performance as a shared responsibility</strong><br />
+            Speed is a team outcome. Everyone plays a part, from backend and frontend to design, QA, and DevOps. Good performance habits must be part of everyday work.
+          </li>
+          <li>
+            <strong>Prevent decay through regular cleanup and review</strong><br />
+            Performance declines naturally over time. Counter this by reviewing dependencies, removing dead code, resetting budgets, and auditing critical flows on a predictable cadence.
+          </li>
+        </ol>
       </article>
     </div>
   </main>
