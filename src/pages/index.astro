@@ -219,6 +219,57 @@ import Layout from "../layouts/Layout.astro";
           Fast by Default uses a simple recurring loop that keeps systems fast as they grow.
         </p>
 
+        <div class="my-12 flex justify-center">
+          <!-- Light Mode SVG -->
+          <svg width="450" height="450" viewBox="0 0 450 450" class="max-w-full h-auto dark:hidden">
+            <circle cx="225" cy="225" r="55" fill="#fafaf9" stroke="#1c1917" stroke-width="3"/>
+            <text x="225" y="220" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917">Fast by</text>
+            <text x="225" y="237" text-anchor="middle" font-size="13" font-weight="600" fill="#1c1917">Default</text>
+            <circle cx="225" cy="70" r="60" fill="#1c1917" stroke="#292524" stroke-width="2"/>
+            <text x="225" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="white">Measure</text>
+            <circle cx="380" cy="225" r="60" fill="#44403c" stroke="#57534e" stroke-width="2"/>
+            <text x="380" y="233" text-anchor="middle" font-size="17" font-weight="bold" fill="white">Build</text>
+            <circle cx="225" cy="380" r="60" fill="#57534e" stroke="#78716c" stroke-width="2"/>
+            <text x="225" y="388" text-anchor="middle" font-size="17" font-weight="bold" fill="white">Own</text>
+            <circle cx="70" cy="225" r="60" fill="#78716c" stroke="#a8a29e" stroke-width="2"/>
+            <text x="70" y="218" text-anchor="middle" font-size="15" font-weight="bold" fill="white">Maintain</text>
+            <text x="70" y="235" text-anchor="middle" font-size="15" font-weight="bold" fill="white">&amp; Refine</text>
+            <defs>
+              <marker id="arrowhead-cycle" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#1c1917" />
+              </marker>
+            </defs>
+            <path d="M 265 100 Q 320 140 340 185" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead-cycle)"/>
+            <path d="M 340 265 Q 300 320 265 350" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead-cycle)"/>
+            <path d="M 185 340 Q 140 300 110 265" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead-cycle)"/>
+            <path d="M 110 185 Q 150 130 185 100" fill="none" stroke="#1c1917" stroke-width="3" marker-end="url(#arrowhead-cycle)"/>
+          </svg>
+          <!-- Dark Mode SVG -->
+          <svg width="450" height="450" viewBox="0 0 450 450" class="max-w-full h-auto hidden dark:block">
+            <circle cx="225" cy="225" r="55" fill="#1c1917" stroke="#e7e5e4" stroke-width="3"/>
+            <text x="225" y="220" text-anchor="middle" font-size="13" font-weight="600" fill="#e7e5e4">Fast by</text>
+            <text x="225" y="237" text-anchor="middle" font-size="13" font-weight="600" fill="#e7e5e4">Default</text>
+            <circle cx="225" cy="70" r="60" fill="#e7e5e4" stroke="#d6d3d1" stroke-width="2"/>
+            <text x="225" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#1c1917">Measure</text>
+            <circle cx="380" cy="225" r="60" fill="#a8a29e" stroke="#78716c" stroke-width="2"/>
+            <text x="380" y="233" text-anchor="middle" font-size="17" font-weight="bold" fill="#1c1917">Build</text>
+            <circle cx="225" cy="380" r="60" fill="#78716c" stroke="#57534e" stroke-width="2"/>
+            <text x="225" y="388" text-anchor="middle" font-size="17" font-weight="bold" fill="white">Own</text>
+            <circle cx="70" cy="225" r="60" fill="#57534e" stroke="#44403c" stroke-width="2"/>
+            <text x="70" y="218" text-anchor="middle" font-size="15" font-weight="bold" fill="white">Maintain</text>
+            <text x="70" y="235" text-anchor="middle" font-size="15" font-weight="bold" fill="white">&amp; Refine</text>
+            <defs>
+              <marker id="arrowhead-cycle-dark" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#e7e5e4" />
+              </marker>
+            </defs>
+            <path d="M 265 100 Q 320 140 340 185" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-cycle-dark)"/>
+            <path d="M 340 265 Q 300 320 265 350" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-cycle-dark)"/>
+            <path d="M 185 340 Q 140 300 110 265" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-cycle-dark)"/>
+            <path d="M 110 185 Q 150 130 185 100" fill="none" stroke="#e7e5e4" stroke-width="3" marker-end="url(#arrowhead-cycle-dark)"/>
+          </svg>
+        </div>
+
         <div class="space-y-6 mb-10">
           <div class="border-l-8 border-stone-900 dark:border-stone-100 pl-6 py-3 bg-stone-50 dark:bg-stone-900">
             <h3 class="font-display font-bold text-stone-900 dark:text-stone-100 text-2xl mb-2">1. Measure</h3>
