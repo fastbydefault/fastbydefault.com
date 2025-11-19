@@ -10,14 +10,33 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Sticky Navigation -->
     <nav id="sticky-nav" class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-stone-900/95 backdrop-blur-sm border-b border-stone-200 dark:border-stone-700 z-40 transform -translate-y-full transition-transform duration-300">
-      <div class="max-w-6xl mx-auto px-6 py-3">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3">
         <div class="flex items-center justify-between">
-          <a href="#top" class="font-display font-bold text-lg text-stone-900 dark:text-stone-100">Fast by Default</a>
-          <div class="flex gap-6 text-sm font-sans">
-            <a href="#philosophy" class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Philosophy</a>
-            <a href="#principles" class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Principles</a>
-            <a href="#cycle" class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Cycle</a>
-            <a href="#checklist" class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Checklist</a>
+          <a href="#top" class="font-display font-bold text-base sm:text-lg text-stone-900 dark:text-stone-100">Fast by Default</a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="sm:hidden text-stone-900 dark:text-stone-100" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden sm:flex gap-4 md:gap-6 text-xs md:text-sm font-sans">
+            <a href="#philosophy" class="nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors pb-1 border-b-2 border-transparent" data-section="philosophy">Philosophy</a>
+            <a href="#principles" class="nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors pb-1 border-b-2 border-transparent" data-section="principles">Principles</a>
+            <a href="#cycle" class="nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors pb-1 border-b-2 border-transparent" data-section="cycle">Cycle</a>
+            <a href="#checklist" class="nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors pb-1 border-b-2 border-transparent" data-section="checklist">Checklist</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="sm:hidden hidden mt-3 pb-2">
+          <div class="flex flex-col gap-2 text-sm font-sans">
+            <a href="#philosophy" class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded" data-section="philosophy">Philosophy</a>
+            <a href="#principles" class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded" data-section="principles">Principles</a>
+            <a href="#cycle" class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded" data-section="cycle">Cycle</a>
+            <a href="#checklist" class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded" data-section="checklist">Checklist</a>
           </div>
         </div>
       </div>
@@ -575,6 +594,75 @@ import Layout from "../layouts/Layout.astro";
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    // Mobile menu toggle
+    function setupMobileMenu() {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu?.classList.add('hidden');
+        });
+      });
+    }
+
+    // Active section highlighting
+    function setupActiveSection() {
+      const sections = ['philosophy', 'principles', 'cycle', 'checklist'];
+      const navLinks = document.querySelectorAll('.nav-link');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+      };
+
+      const observerCallback = (entries: IntersectionObserverEntry[]) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+
+            // Update desktop nav
+            navLinks.forEach(link => {
+              if (link.getAttribute('data-section') === sectionId) {
+                link.classList.remove('text-stone-600', 'dark:text-stone-400', 'border-transparent');
+                link.classList.add('text-stone-900', 'dark:text-stone-100', 'border-stone-900', 'dark:border-stone-100');
+              } else {
+                link.classList.add('text-stone-600', 'dark:text-stone-400', 'border-transparent');
+                link.classList.remove('text-stone-900', 'dark:text-stone-100', 'border-stone-900', 'dark:border-stone-100');
+              }
+            });
+
+            // Update mobile nav
+            mobileNavLinks.forEach(link => {
+              if (link.getAttribute('data-section') === sectionId) {
+                link.classList.remove('text-stone-600', 'dark:text-stone-400');
+                link.classList.add('text-stone-900', 'dark:text-stone-100', 'bg-stone-100', 'dark:bg-stone-800');
+              } else {
+                link.classList.add('text-stone-600', 'dark:text-stone-400');
+                link.classList.remove('text-stone-900', 'dark:text-stone-100', 'bg-stone-100', 'dark:bg-stone-800');
+              }
+            });
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.observe(section);
+        }
+      });
+    }
+
     // Smooth scroll for navigation links
     function setupSmoothScroll() {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -606,6 +694,8 @@ import Layout from "../layouts/Layout.astro";
       updateStickyNav();
       updateBackToTop();
       setupSmoothScroll();
+      setupMobileMenu();
+      setupActiveSection();
     });
   </script>
 </Layout>
