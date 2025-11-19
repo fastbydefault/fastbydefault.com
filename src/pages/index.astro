@@ -445,25 +445,35 @@ import Layout from "../layouts/Layout.astro";
               Architecture
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Remove unnecessary round trips and sequential dependencies.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Remove unnecessary round trips and sequential dependencies.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep critical-path work shallow and predictable.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep critical-path work shallow and predictable.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Choose rendering and loading strategies that suit your platform.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Choose rendering and loading strategies that suit your platform.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Plan caching, preloading, and data shaping early.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Plan caching, preloading, and data shaping early.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep services and components small, stable, and easy to optimise.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep services and components small, stable, and easy to optimise.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -474,25 +484,35 @@ import Layout from "../layouts/Layout.astro";
               Development
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Surface long tasks and blocking operations during coding.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Surface long tasks and blocking operations during coding.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Show bundle weight, API cost, and render time as part of normal work.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Show bundle weight, API cost, and render time as part of normal work.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use profiling tools to spot regressions early.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Use profiling tools to spot regressions early.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Treat third-party scripts and SDKs as high-risk additions.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Treat third-party scripts and SDKs as high-risk additions.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep complexity low, especially in frequently used code paths.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep complexity low, especially in frequently used code paths.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -503,25 +523,35 @@ import Layout from "../layouts/Layout.astro";
               Code Review
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Check for unnecessary work on initialization.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Check for unnecessary work on initialization.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Look for new blocking operations, heavy assets, or slow queries.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Look for new blocking operations, heavy assets, or slow queries.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Confirm that changes respect existing budgets.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Confirm that changes respect existing budgets.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Flag hidden dependencies that add latency or load.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Flag hidden dependencies that add latency or load.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Require good loading states and resilient interaction patterns.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Require good loading states and resilient interaction patterns.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -532,25 +562,35 @@ import Layout from "../layouts/Layout.astro";
               CI and Budgets
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Define budgets for JavaScript size, API latency, startup time, and more.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Define budgets for JavaScript size, API latency, startup time, and more.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Enforce these budgets automatically with predictable checks.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Enforce these budgets automatically with predictable checks.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Fail builds that slow down key metrics.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Fail builds that slow down key metrics.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Track historical performance to spot decay over time.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Track historical performance to spot decay over time.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Run both cold-start and warm-path tests.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Run both cold-start and warm-path tests.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -561,25 +601,35 @@ import Layout from "../layouts/Layout.astro";
               Testing
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Test complete flows, not only single pages or endpoints.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Test complete flows, not only single pages or endpoints.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Simulate real devices, networks, and geographic regions.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Simulate real devices, networks, and geographic regions.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use lab tools for consistency and field tools for truth.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Use lab tools for consistency and field tools for truth.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Test interactions, not just load times.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Test interactions, not just load times.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Check edge cases like empty states, slow endpoints, and offline scenarios.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Check edge cases like empty states, slow endpoints, and offline scenarios.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -590,25 +640,35 @@ import Layout from "../layouts/Layout.astro";
               Observability
             </h3>
             <ul class="space-y-3">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Track Core Web Vitals, slow interactions, and long tasks in production.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Track Core Web Vitals, slow interactions, and long tasks in production.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Monitor backend latency, memory use, and service health.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Monitor backend latency, memory use, and service health.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Instrument the user flows that matter most.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Instrument the user flows that matter most.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Alert on user-visible issues, not internal noise.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Alert on user-visible issues, not internal noise.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Use production data to refine budgets and priorities.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Use production data to refine budgets and priorities.</span>
+                </label>
               </li>
             </ul>
           </div>
@@ -619,25 +679,35 @@ import Layout from "../layouts/Layout.astro";
               Team Habits
             </h3>
             <ul class="grid md:grid-cols-2 gap-4">
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Include performance goals in planning and design reviews.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Include performance goals in planning and design reviews.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Run scheduled cleanup cycles to reduce complexity and dead code.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Run scheduled cleanup cycles to reduce complexity and dead code.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep dependencies healthy and up to date.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Keep dependencies healthy and up to date.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Share ownership across frontend, backend, mobile, QA, and infrastructure.</span>
+              <li class="group">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Share ownership across frontend, backend, mobile, QA, and infrastructure.</span>
+                </label>
               </li>
-              <li class="flex items-start gap-3 group md:col-span-2">
-                <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
-                <span class="text-stone-800 dark:text-stone-200 leading-snug">Celebrate improvements and reinforce good patterns.</span>
+              <li class="group md:col-span-2">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input type="checkbox" class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer" />
+                  <span class="text-stone-800 dark:text-stone-200 leading-snug">Celebrate improvements and reinforce good patterns.</span>
+                </label>
               </li>
             </ul>
           </div>
