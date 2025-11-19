@@ -2,11 +2,28 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
+<style>
+  #scroll-progress {
+    animation: scroll-progress linear;
+    animation-timeline: scroll(root);
+    transform-origin: left;
+  }
+
+  @keyframes scroll-progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+</style>
+
 <Layout title="Fast by Default">
   <main class="min-h-screen bg-stone-50 dark:bg-stone-950">
 
     <!-- Scroll Progress Indicator -->
-    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-stone-900 dark:bg-stone-100 z-50 transition-all duration-100" style="width: 0%"></div>
+    <div id="scroll-progress" class="fixed top-0 left-0 w-full h-1 bg-stone-900 dark:bg-stone-100 z-50"></div>
 
     <!-- Sticky Navigation -->
     <nav id="sticky-nav" class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-stone-900/95 backdrop-blur-sm border-b border-stone-200 dark:border-stone-700 z-40 transform -translate-y-full transition-transform duration-300">
@@ -787,18 +804,6 @@ import Layout from "../layouts/Layout.astro";
   </main>
 
   <script>
-    // Scroll Progress Indicator
-    function updateScrollProgress() {
-      const scrollProgress = document.getElementById('scroll-progress');
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.scrollY;
-      const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
-      if (scrollProgress) {
-        scrollProgress.style.width = `${Math.min(scrollPercentage, 100)}%`;
-      }
-    }
-
     // Sticky Navigation
     function updateStickyNav() {
       const stickyNav = document.getElementById('sticky-nav');
@@ -916,7 +921,6 @@ import Layout from "../layouts/Layout.astro";
 
     // Event listeners
     window.addEventListener('scroll', () => {
-      updateScrollProgress();
       updateStickyNav();
       updateBackToTop();
     });
@@ -925,7 +929,6 @@ import Layout from "../layouts/Layout.astro";
 
     // Initialize on load
     document.addEventListener('DOMContentLoaded', () => {
-      updateScrollProgress();
       updateStickyNav();
       updateBackToTop();
       setupSmoothScroll();
