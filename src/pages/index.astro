@@ -324,6 +324,131 @@ import Layout from "../layouts/Layout.astro";
           loop that feels productive but creates long-term drag.
         </p>
 
+        <div class="my-12 flex justify-center">
+          <!-- Light Mode SVG -->
+          <svg
+            width="320"
+            height="320"
+            viewBox="0 0 320 320"
+            class="max-w-full h-auto dark:hidden"
+          >
+            <!-- Circular arrow showing the loop -->
+            <defs>
+              <marker
+                id="decay-arrow"
+                markerWidth="10"
+                markerHeight="10"
+                refX="5"
+                refY="5"
+                orient="auto"
+              >
+                <polygon points="0 0, 10 5, 0 10" fill="#78716c"></polygon>
+              </marker>
+            </defs>
+            <!-- Outer ring with dashed style to suggest instability -->
+            <circle
+              cx="160"
+              cy="160"
+              r="120"
+              fill="none"
+              stroke="#d6d3d1"
+              stroke-width="2"
+              stroke-dasharray="8 4"
+            ></circle>
+            <!-- Circular arrow path -->
+            <path
+              d="M 160 50 A 110 110 0 1 1 155 50"
+              fill="none"
+              stroke="#78716c"
+              stroke-width="3"
+              marker-end="url(#decay-arrow)"
+            ></path>
+            <!-- Center icon - warning/cycle symbol -->
+            <circle
+              cx="160"
+              cy="160"
+              r="45"
+              fill="#fafaf9"
+              stroke="#78716c"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="160"
+              y="155"
+              text-anchor="middle"
+              font-size="24"
+              fill="#78716c"
+            >&#x21bb;</text>
+            <text
+              x="160"
+              y="175"
+              text-anchor="middle"
+              font-size="10"
+              font-weight="600"
+              fill="#78716c"
+            >REPEAT</text>
+          </svg>
+          <!-- Dark Mode SVG -->
+          <svg
+            width="320"
+            height="320"
+            viewBox="0 0 320 320"
+            class="max-w-full h-auto hidden dark:block"
+          >
+            <defs>
+              <marker
+                id="decay-arrow-dark"
+                markerWidth="10"
+                markerHeight="10"
+                refX="5"
+                refY="5"
+                orient="auto"
+              >
+                <polygon points="0 0, 10 5, 0 10" fill="#a8a29e"></polygon>
+              </marker>
+            </defs>
+            <circle
+              cx="160"
+              cy="160"
+              r="120"
+              fill="none"
+              stroke="#57534e"
+              stroke-width="2"
+              stroke-dasharray="8 4"
+            ></circle>
+            <path
+              d="M 160 50 A 110 110 0 1 1 155 50"
+              fill="none"
+              stroke="#a8a29e"
+              stroke-width="3"
+              marker-end="url(#decay-arrow-dark)"
+            ></path>
+            <circle
+              cx="160"
+              cy="160"
+              r="45"
+              fill="#1c1917"
+              stroke="#a8a29e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="160"
+              y="155"
+              text-anchor="middle"
+              font-size="24"
+              fill="#a8a29e"
+            >&#x21bb;</text>
+            <text
+              x="160"
+              y="175"
+              text-anchor="middle"
+              font-size="10"
+              font-weight="600"
+              fill="#a8a29e"
+            >REPEAT</text>
+          </svg>
+        </div>
+
         <ol
           class="space-y-4 text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-8"
         >
@@ -663,6 +788,16 @@ import Layout from "../layouts/Layout.astro";
         >
           Taken together, these three actions move a team out of the performance
           decay cycle and into the Fast by Default mindset.
+        </p>
+
+        <p class="text-center mt-8">
+          <a
+            href="#cycle"
+            class="inline-flex items-center gap-2 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors font-sans text-sm tracking-wide"
+          >
+            Want the full model? Jump to the Fast by Default Cycle
+            <span aria-hidden="true">↓</span>
+          </a>
         </p>
       </section>
 
@@ -2099,6 +2234,20 @@ import Layout from "../layouts/Layout.astro";
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Concluding Statement -->
+    <section class="bg-stone-50 dark:bg-stone-950 py-16">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <p
+          class="font-display text-2xl sm:text-3xl text-stone-800 dark:text-stone-200 leading-relaxed"
+        >
+          Fast by Default is a model you apply every day, not a tool you
+          install. When teams design for speed, verify continuously, and respond
+          to real users, performance becomes the natural outcome of how you
+          work.
+        </p>
       </div>
     </section>
 
