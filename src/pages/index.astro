@@ -309,6 +309,70 @@ import Layout from "../layouts/Layout.astro";
         </blockquote>
       </div>
 
+      <!-- The Performance Decay Cycle Section -->
+      <section class="mb-20">
+        <h2
+          class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-8 pb-4 border-b-2 border-stone-300 dark:border-stone-600"
+        >
+          The Performance Decay Cycle
+        </h2>
+
+        <p
+          class="text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-8"
+        >
+          Most teams do not become slow overnight. They follow a predictable
+          loop that feels productive but creates long-term drag.
+        </p>
+
+        <ol
+          class="space-y-4 text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-8"
+        >
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >1</span
+            >
+            <span class="pt-0.5">Ship features quickly.</span>
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >2</span
+            >
+            <span class="pt-0.5"
+              >Users complain about slow or broken experiences.</span
+            >
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >3</span
+            >
+            <span class="pt-0.5">Teams panic and patch symptoms.</span>
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >4</span
+            >
+            <span class="pt-0.5">Performance improves temporarily.</span>
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >5</span
+            >
+            <span class="pt-0.5">The cycle repeats as complexity grows.</span>
+          </li>
+        </ol>
+
+        <p class="text-lg leading-relaxed text-stone-800 dark:text-stone-200">
+          Fast by Default replaces this reactive loop with a disciplined,
+          repeatable system where performance improves as part of normal work
+          rather than emergency work.
+        </p>
+      </section>
+
       <!-- Criteria Section -->
       <section class="mb-20">
         <h2
@@ -534,6 +598,72 @@ import Layout from "../layouts/Layout.astro";
             </p>
           </div>
         </div>
+      </section>
+
+      <!-- Start Here Section -->
+      <section class="mb-20">
+        <h2
+          class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-8 pb-4 border-b-2 border-stone-300 dark:border-stone-600"
+        >
+          Start Here
+        </h2>
+
+        <p
+          class="text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-10"
+        >
+          If you do nothing else, start with these three moves.
+        </p>
+
+        <div class="space-y-8">
+          <div
+            class="bg-white dark:bg-stone-800 p-6 border-l-4 border-stone-900 dark:border-stone-100 shadow-sm"
+          >
+            <h3
+              class="font-display text-xl font-bold text-stone-900 dark:text-stone-100 mb-3"
+            >
+              One principle
+            </h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
+              Design for speed before you write code. Treat performance as a
+              requirement, not a rescue mission.
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-stone-800 p-6 border-l-4 border-stone-700 dark:border-stone-300 shadow-sm"
+          >
+            <h3
+              class="font-display text-xl font-bold text-stone-900 dark:text-stone-100 mb-3"
+            >
+              One practice
+            </h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
+              Make performance visible during development. Show long tasks,
+              bundle size, and blocking operations as you work.
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-stone-800 p-6 border-l-4 border-stone-500 dark:border-stone-400 shadow-sm"
+          >
+            <h3
+              class="font-display text-xl font-bold text-stone-900 dark:text-stone-100 mb-3"
+            >
+              One check
+            </h3>
+            <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
+              Add a simple budget for JavaScript size or API latency and enforce
+              it automatically.
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="text-lg leading-relaxed text-stone-800 dark:text-stone-200 mt-10"
+        >
+          Taken together, these three actions move a team out of the performance
+          decay cycle and into the Fast by Default mindset.
+        </p>
       </section>
 
       <!-- Section Divider -->
@@ -1360,6 +1490,104 @@ import Layout from "../layouts/Layout.astro";
           <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
             These practical steps fit within the larger Fast by Default Cycle,
             ensuring that performance stays healthy as part of everyday work.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-16">
+        <div class="flex gap-2">
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
+          <div class="w-2 h-2 bg-stone-900 dark:bg-stone-100 rotate-45"></div>
+        </div>
+      </div>
+
+      <!-- Is Your Team Fast by Default? Section -->
+      <section class="mb-20">
+        <h2
+          class="font-display text-4xl sm:text-5xl font-bold text-stone-900 dark:text-stone-100 mb-8 pb-4 border-b-2 border-stone-300 dark:border-stone-600"
+        >
+          Is Your Team Fast by Default?
+        </h2>
+
+        <p
+          class="text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-8"
+        >
+          Use this quick self-check to see where your team stands today.
+        </p>
+
+        <p
+          class="text-lg font-semibold text-stone-800 dark:text-stone-200 mb-6"
+        >
+          Answer yes or no to each question:
+        </p>
+
+        <ol
+          class="space-y-4 text-lg leading-relaxed text-stone-800 dark:text-stone-200 mb-10"
+        >
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >1</span
+            >
+            <span class="pt-0.5"
+              >Do you catch performance problems during development rather than
+              after release?</span
+            >
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >2</span
+            >
+            <span class="pt-0.5"
+              >Are performance budgets defined and enforced automatically in
+              CI?</span
+            >
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >3</span
+            >
+            <span class="pt-0.5"
+              >Do you use real user data to decide which performance issues to
+              fix first?</span
+            >
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >4</span
+            >
+            <span class="pt-0.5"
+              >Do developers see the performance impact of their changes as they
+              work?</span
+            >
+          </li>
+          <li class="flex gap-4">
+            <span
+              class="flex-shrink-0 font-display text-2xl font-bold text-stone-400 dark:text-stone-500"
+              >5</span
+            >
+            <span class="pt-0.5"
+              >Do you run a regular cleanup cycle that removes dead code and
+              unnecessary complexity?</span
+            >
+          </li>
+        </ol>
+
+        <div
+          class="bg-stone-100 dark:bg-stone-800 p-6 border-2 border-stone-300 dark:border-stone-600"
+        >
+          <p class="text-stone-800 dark:text-stone-200 leading-relaxed mb-4">
+            If you answered no to more than two questions, your team is probably
+            working inside the performance decay cycle.
+          </p>
+          <p class="text-stone-800 dark:text-stone-200 leading-relaxed">
+            The Fast by Default model offers a way out by making performance
+            part of everyday work instead of emergency work.
           </p>
         </div>
       </section>
