@@ -327,125 +327,366 @@ import Layout from "../layouts/Layout.astro";
         <div class="my-12 flex justify-center">
           <!-- Light Mode SVG -->
           <svg
-            width="320"
-            height="320"
-            viewBox="0 0 320 320"
+            width="500"
+            height="500"
+            viewBox="0 0 500 500"
             class="max-w-full h-auto dark:hidden"
           >
-            <!-- Circular arrow showing the loop -->
+            <!-- Center circle -->
+            <circle
+              cx="250"
+              cy="250"
+              r="55"
+              fill="#fafaf9"
+              stroke="#78716c"
+              stroke-width="2"
+              stroke-dasharray="4 2"
+            ></circle>
+            <text
+              x="250"
+              y="245"
+              text-anchor="middle"
+              font-size="12"
+              fill="#78716c"
+            >Performance</text>
+            <text
+              x="250"
+              y="260"
+              text-anchor="middle"
+              font-size="12"
+              fill="#78716c"
+            >Decay</text>
+
+            <!-- Node 1: Ship (top) -->
+            <circle
+              cx="250"
+              cy="70"
+              r="50"
+              fill="#78716c"
+              stroke="#57534e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="250"
+              y="75"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="white"
+            >Ship</text>
+
+            <!-- Node 2: Complain (top right) -->
+            <circle
+              cx="400"
+              cy="160"
+              r="50"
+              fill="#78716c"
+              stroke="#57534e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="400"
+              y="165"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="white"
+            >Complain</text>
+
+            <!-- Node 3: Panic (bottom right) -->
+            <circle
+              cx="370"
+              cy="360"
+              r="50"
+              fill="#78716c"
+              stroke="#57534e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="370"
+              y="365"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="white"
+            >Panic</text>
+
+            <!-- Node 4: Patch (bottom left) -->
+            <circle
+              cx="130"
+              cy="360"
+              r="50"
+              fill="#78716c"
+              stroke="#57534e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="130"
+              y="365"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="white"
+            >Patch</text>
+
+            <!-- Node 5: Repeat (top left) -->
+            <circle
+              cx="100"
+              cy="160"
+              r="50"
+              fill="#78716c"
+              stroke="#57534e"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="100"
+              y="165"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="white"
+            >Repeat</text>
+
+            <!-- Arrows -->
             <defs>
               <marker
                 id="decay-arrow"
                 markerWidth="10"
                 markerHeight="10"
-                refX="5"
-                refY="5"
+                refX="9"
+                refY="3"
                 orient="auto"
               >
-                <polygon points="0 0, 10 5, 0 10" fill="#78716c"></polygon>
+                <polygon points="0 0, 10 3, 0 6" fill="#57534e"></polygon>
               </marker>
             </defs>
-            <!-- Outer ring with dashed style to suggest instability -->
-            <circle
-              cx="160"
-              cy="160"
-              r="120"
-              fill="none"
-              stroke="#d6d3d1"
-              stroke-width="2"
-              stroke-dasharray="8 4"
-            ></circle>
-            <!-- Circular arrow path -->
+
+            <!-- Ship to Complain -->
             <path
-              d="M 160 50 A 110 110 0 1 1 155 50"
+              d="M 290 95 Q 340 110 360 135"
               fill="none"
-              stroke="#78716c"
-              stroke-width="3"
+              stroke="#57534e"
+              stroke-width="2"
               marker-end="url(#decay-arrow)"
             ></path>
-            <!-- Center icon - warning/cycle symbol -->
+
+            <!-- Complain to Panic -->
+            <path
+              d="M 395 210 Q 390 280 380 310"
+              fill="none"
+              stroke="#57534e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow)"
+            ></path>
+
+            <!-- Panic to Patch -->
+            <path
+              d="M 320 375 Q 250 400 180 375"
+              fill="none"
+              stroke="#57534e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow)"
+            ></path>
+
+            <!-- Patch to Repeat -->
+            <path
+              d="M 120 310 Q 105 280 105 210"
+              fill="none"
+              stroke="#57534e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow)"
+            ></path>
+
+            <!-- Repeat to Ship -->
+            <path
+              d="M 140 135 Q 175 105 210 90"
+              fill="none"
+              stroke="#57534e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow)"
+            ></path>
+          </svg>
+
+          <!-- Dark Mode SVG -->
+          <svg
+            width="500"
+            height="500"
+            viewBox="0 0 500 500"
+            class="max-w-full h-auto hidden dark:block"
+          >
+            <!-- Center circle -->
             <circle
-              cx="160"
-              cy="160"
-              r="45"
-              fill="#fafaf9"
+              cx="250"
+              cy="250"
+              r="55"
+              fill="#1c1917"
+              stroke="#a8a29e"
+              stroke-width="2"
+              stroke-dasharray="4 2"
+            ></circle>
+            <text
+              x="250"
+              y="245"
+              text-anchor="middle"
+              font-size="12"
+              fill="#a8a29e"
+            >Performance</text>
+            <text
+              x="250"
+              y="260"
+              text-anchor="middle"
+              font-size="12"
+              fill="#a8a29e"
+            >Decay</text>
+
+            <!-- Node 1: Ship (top) -->
+            <circle
+              cx="250"
+              cy="70"
+              r="50"
+              fill="#a8a29e"
               stroke="#78716c"
               stroke-width="2"
             ></circle>
             <text
-              x="160"
-              y="155"
+              x="250"
+              y="75"
               text-anchor="middle"
-              font-size="24"
-              fill="#78716c"
-            >&#x21bb;</text>
+              font-size="14"
+              font-weight="bold"
+              fill="#1c1917"
+            >Ship</text>
+
+            <!-- Node 2: Complain (top right) -->
+            <circle
+              cx="400"
+              cy="160"
+              r="50"
+              fill="#a8a29e"
+              stroke="#78716c"
+              stroke-width="2"
+            ></circle>
             <text
-              x="160"
-              y="175"
+              x="400"
+              y="165"
               text-anchor="middle"
-              font-size="10"
-              font-weight="600"
-              fill="#78716c"
-            >REPEAT</text>
-          </svg>
-          <!-- Dark Mode SVG -->
-          <svg
-            width="320"
-            height="320"
-            viewBox="0 0 320 320"
-            class="max-w-full h-auto hidden dark:block"
-          >
+              font-size="14"
+              font-weight="bold"
+              fill="#1c1917"
+            >Complain</text>
+
+            <!-- Node 3: Panic (bottom right) -->
+            <circle
+              cx="370"
+              cy="360"
+              r="50"
+              fill="#a8a29e"
+              stroke="#78716c"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="370"
+              y="365"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="#1c1917"
+            >Panic</text>
+
+            <!-- Node 4: Patch (bottom left) -->
+            <circle
+              cx="130"
+              cy="360"
+              r="50"
+              fill="#a8a29e"
+              stroke="#78716c"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="130"
+              y="365"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="#1c1917"
+            >Patch</text>
+
+            <!-- Node 5: Repeat (top left) -->
+            <circle
+              cx="100"
+              cy="160"
+              r="50"
+              fill="#a8a29e"
+              stroke="#78716c"
+              stroke-width="2"
+            ></circle>
+            <text
+              x="100"
+              y="165"
+              text-anchor="middle"
+              font-size="14"
+              font-weight="bold"
+              fill="#1c1917"
+            >Repeat</text>
+
+            <!-- Arrows -->
             <defs>
               <marker
                 id="decay-arrow-dark"
                 markerWidth="10"
                 markerHeight="10"
-                refX="5"
-                refY="5"
+                refX="9"
+                refY="3"
                 orient="auto"
               >
-                <polygon points="0 0, 10 5, 0 10" fill="#a8a29e"></polygon>
+                <polygon points="0 0, 10 3, 0 6" fill="#a8a29e"></polygon>
               </marker>
             </defs>
-            <circle
-              cx="160"
-              cy="160"
-              r="120"
-              fill="none"
-              stroke="#57534e"
-              stroke-width="2"
-              stroke-dasharray="8 4"
-            ></circle>
+
+            <!-- Ship to Complain -->
             <path
-              d="M 160 50 A 110 110 0 1 1 155 50"
+              d="M 290 95 Q 340 110 360 135"
               fill="none"
               stroke="#a8a29e"
-              stroke-width="3"
+              stroke-width="2"
               marker-end="url(#decay-arrow-dark)"
             ></path>
-            <circle
-              cx="160"
-              cy="160"
-              r="45"
-              fill="#1c1917"
+
+            <!-- Complain to Panic -->
+            <path
+              d="M 395 210 Q 390 280 380 310"
+              fill="none"
               stroke="#a8a29e"
               stroke-width="2"
-            ></circle>
-            <text
-              x="160"
-              y="155"
-              text-anchor="middle"
-              font-size="24"
-              fill="#a8a29e"
-            >&#x21bb;</text>
-            <text
-              x="160"
-              y="175"
-              text-anchor="middle"
-              font-size="10"
-              font-weight="600"
-              fill="#a8a29e"
-            >REPEAT</text>
+              marker-end="url(#decay-arrow-dark)"
+            ></path>
+
+            <!-- Panic to Patch -->
+            <path
+              d="M 320 375 Q 250 400 180 375"
+              fill="none"
+              stroke="#a8a29e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow-dark)"
+            ></path>
+
+            <!-- Patch to Repeat -->
+            <path
+              d="M 120 310 Q 105 280 105 210"
+              fill="none"
+              stroke="#a8a29e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow-dark)"
+            ></path>
+
+            <!-- Repeat to Ship -->
+            <path
+              d="M 140 135 Q 175 105 210 90"
+              fill="none"
+              stroke="#a8a29e"
+              stroke-width="2"
+              marker-end="url(#decay-arrow-dark)"
+            ></path>
           </svg>
         </div>
 
