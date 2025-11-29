@@ -32,9 +32,14 @@ import Layout from "../layouts/Layout.astro";
         "@id": "https://fastbydefault.com"
       },
       "about": {
-        "@type": "Thing",
+        "@type": "DefinedTerm",
         "name": "Fast by Default performance model",
-        "description": "A performance engineering model created by Den Odell that embeds speed and responsiveness into architecture, code, testing, deployment, and team habits."
+        "description": "A performance engineering model created by Den Odell that embeds speed and responsiveness into architecture, code, testing, deployment, and team habits.",
+        "creator": {
+          "@type": "Person",
+          "name": "Den Odell",
+          "url": "https://denodell.com"
+        }
       },
       "author": {
         "@type": "Person",
@@ -297,9 +302,10 @@ import Layout from "../layouts/Layout.astro";
             href="https://denodell.com"
             target="_blank">Den Odell</a
           >. It puts performance at the centre of architecture, code, testing,
-          deployment, and team habits. The goal is to build systems where speed
-          and responsiveness emerge naturally from everyday work rather than
-          being retrofitted in a rescue mission after users complain.
+          deployment, and team habits, treating speed as a first-class
+          requirement rather than an afterthought. The goal is to build systems
+          where speed and responsiveness emerge naturally from everyday work
+          instead of being retrofitted in a rescue mission after users complain.
         </p>
       </div>
 
