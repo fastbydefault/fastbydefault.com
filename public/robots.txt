@@ -1,0 +1,7 @@
+# robots.txt for fastbydefault.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fastbydefault.com/sitemap.xml

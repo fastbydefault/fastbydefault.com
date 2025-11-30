@@ -4,34 +4,64 @@ import "../styles/global.css";
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  canonical?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image, canonical } = Astro.props;
 const defaultDescription = "A performance engineering framework by Den Odell with practical guidance for building fast, responsive systems. Learn how to design for speed across web, mobile, backend, and desktop.";
 const metaDescription = description || defaultDescription;
+
+const siteUrl = "https://fastbydefault.com";
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+const ogImage = image || `${siteUrl}/og-image.png`;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content={metaDescription}
-    />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="twitter:creator" content="@denodell" />
-    <meta name="author" content="Den Odell" />
-    <meta property="og:site_name" content="Fast by Default" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={metaDescription} />
+    <meta name="author" content="Den Odell" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1c1917" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Fast by Default" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:creator" content="@denodell" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>{title}</title>
   </head>
   <body class="font-serif">
     <slot />
