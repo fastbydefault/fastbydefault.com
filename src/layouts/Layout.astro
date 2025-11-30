@@ -3,9 +3,12 @@ import "../styles/global.css";
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
+const defaultDescription = "A performance engineering framework by Den Odell with practical guidance for building fast, responsive systems. Learn how to design for speed across web, mobile, backend, and desktop.";
+const metaDescription = description || defaultDescription;
 ---
 
 <!doctype html>
@@ -14,7 +17,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A performance engineering framework by Den Odell with practical guidance for building fast, responsive systems. Learn how to design for speed across web, mobile, backend, and desktop."
+      content={metaDescription}
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
