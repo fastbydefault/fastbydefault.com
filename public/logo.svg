@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" fill="currentColor">
+  <!-- Left decorative swirl -->
+  <path d="M30 80 Q45 40, 80 50 Q115 60, 100 90 Q85 120, 50 110 Q15 100, 30 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 75 Q60 55, 85 65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M25 95 Q10 85, 15 65 Q20 45, 45 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Elegant swoosh under text -->
+  <path d="M90 115 Q200 140, 300 130 Q400 120, 510 145" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M100 125 Q200 145, 300 138 Q400 131, 500 150" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Main text: Fast -->
+  <text x="95" y="85" font-family="Georgia, serif" font-size="58" font-weight="bold" font-style="italic" letter-spacing="-2">Fast</text>
+
+  <!-- Decorative swirl connecting words -->
+  <path d="M235 70 Q260 45, 285 55 Q305 62, 295 78 Q285 92, 260 85 Q245 80, 255 65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M265 72 Q280 60, 292 68" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- "by" in script style -->
+  <text x="268" y="90" font-family="Georgia, serif" font-size="32" font-style="italic" opacity="0.8">by</text>
+
+  <!-- Main text: Default -->
+  <text x="315" y="85" font-family="Georgia, serif" font-size="58" font-weight="bold" font-style="italic" letter-spacing="-2">Default</text>
+
+  <!-- Right decorative swirl -->
+  <path d="M570 80 Q555 40, 520 50 Q485 60, 500 90 Q515 120, 550 110 Q585 100, 570 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M550 75 Q540 55, 515 65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M575 95 Q590 85, 585 65 Q580 45, 555 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Small decorative dots/accents -->
+  <circle cx="75" cy="45" r="3" opacity="0.6"/>
+  <circle cx="525" cy="45" r="3" opacity="0.6"/>
+  <circle cx="300" cy="50" r="2.5" opacity="0.5"/>
+
+  <!-- Top flourish -->
+  <path d="M200 35 Q250 20, 300 28 Q350 20, 400 35" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M230 30 Q265 18, 300 22 Q335 18, 370 30" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+</svg>
