@@ -9,11 +9,13 @@ interface Props {
 }
 
 const { title, description, image, canonical } = Astro.props;
-const defaultDescription = "A performance engineering framework by Den Odell with practical guidance for building fast, responsive systems. Learn how to design for speed across web, mobile, backend, and desktop.";
+const defaultDescription =
+  "A performance engineering framework by Den Odell with practical guidance for building fast, responsive systems. Learn how to design for speed across web, mobile, backend, and desktop.";
 const metaDescription = description || defaultDescription;
 
 const siteUrl = "https://fastbydefault.com";
-const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+const canonicalUrl =
+  canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const ogImage = image || `${siteUrl}/og-image.png`;
 ---
 
@@ -64,10 +66,20 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     />
 
     <!-- Privacy-friendly analytics by Plausible -->
-    <script async src="https://plausible.io/js/pa-DaVyYJLEfT9p_2vefAePa.js"></script>
+    <script async src="https://plausible.io/js/pa-DaVyYJLEfT9p_2vefAePa.js"
+    ></script>
     <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
+      (window.plausible =
+        window.plausible ||
+        function () {
+          (plausible.q = plausible.q || []).push(arguments);
+        }),
+        (plausible.init =
+          plausible.init ||
+          function (i) {
+            plausible.o = i || {};
+          });
+      plausible.init();
     </script>
   </head>
   <body class="font-serif">
@@ -87,7 +99,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           class="text-lg text-stone-600 dark:text-stone-300 leading-relaxed max-w-xl mx-auto mb-10"
         >
           A monthly email from Den Odell with behind-the-scenes thinking on
-          performance engineering and updates on Fast by Default.
+          performance engineering, updates on Fast by Default, and more.
         </p>
 
         <form
@@ -116,9 +128,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           </div>
         </form>
 
-        <p
-          class="mt-4 text-sm font-sans text-stone-600 dark:text-stone-300"
-        >
+        <p class="mt-4 text-sm font-sans text-stone-600 dark:text-stone-300">
           One email per month, no spam.
         </p>
       </div>

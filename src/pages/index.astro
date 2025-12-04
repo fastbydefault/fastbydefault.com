@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import fbdImage from "../images/fbd.png";
+import fbdImage2 from "../images/fbd2.png";
 ---
 
 <style>
@@ -623,7 +626,6 @@ import Layout from "../layouts/Layout.astro";
           Taken together, these three actions move a team out of the performance
           decay cycle and into the Fast by Default mindset.
         </p>
-
       </section>
 
       <!-- Section Divider -->
@@ -655,277 +657,17 @@ import Layout from "../layouts/Layout.astro";
           as they grow.
         </p>
 
-        <div class="my-12 flex justify-center">
-          <!-- Light Mode SVG -->
-          <svg
-            width="450"
-            height="450"
-            viewBox="0 0 450 450"
-            class="max-w-full h-auto dark:hidden"
-          >
-            <circle
-              cx="225"
-              cy="225"
-              r="55"
-              fill="#fafaf9"
-              stroke="#1c1917"
-              stroke-width="3"></circle>
-            <text
-              x="225"
-              y="220"
-              text-anchor="middle"
-              font-size="13"
-              font-weight="600"
-              fill="#1c1917">Fast by</text
-            >
-            <text
-              x="225"
-              y="237"
-              text-anchor="middle"
-              font-size="13"
-              font-weight="600"
-              fill="#1c1917">Default</text
-            >
-            <circle
-              cx="225"
-              cy="70"
-              r="60"
-              fill="#1c1917"
-              stroke="#292524"
-              stroke-width="2"></circle>
-            <text
-              x="225"
-              y="78"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="white">Measure</text
-            >
-            <circle
-              cx="380"
-              cy="225"
-              r="60"
-              fill="#44403c"
-              stroke="#57534e"
-              stroke-width="2"></circle>
-            <text
-              x="380"
-              y="233"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="white">Build</text
-            >
-            <circle
-              cx="225"
-              cy="380"
-              r="60"
-              fill="#57534e"
-              stroke="#78716c"
-              stroke-width="2"></circle>
-            <text
-              x="225"
-              y="388"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="white">Own</text
-            >
-            <circle
-              cx="70"
-              cy="225"
-              r="60"
-              fill="#78716c"
-              stroke="#a8a29e"
-              stroke-width="2"></circle>
-            <text
-              x="70"
-              y="218"
-              text-anchor="middle"
-              font-size="15"
-              font-weight="bold"
-              fill="white">Maintain</text
-            >
-            <text
-              x="70"
-              y="235"
-              text-anchor="middle"
-              font-size="15"
-              font-weight="bold"
-              fill="white">&amp; Refine</text
-            >
-            <defs>
-              <marker
-                id="arrowhead-cycle"
-                markerWidth="10"
-                markerHeight="10"
-                refX="9"
-                refY="3"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3, 0 6" fill="#1c1917"></polygon>
-              </marker>
-            </defs>
-            <path
-              d="M 265 100 Q 320 140 340 185"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle)"></path>
-            <path
-              d="M 340 265 Q 300 320 265 350"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle)"></path>
-            <path
-              d="M 185 340 Q 140 300 110 265"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle)"></path>
-            <path
-              d="M 110 185 Q 150 130 185 100"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle)"></path>
-          </svg>
-          <!-- Dark Mode SVG -->
-          <svg
-            width="450"
-            height="450"
-            viewBox="0 0 450 450"
-            class="max-w-full h-auto hidden dark:block"
-          >
-            <circle
-              cx="225"
-              cy="225"
-              r="55"
-              fill="#1c1917"
-              stroke="#e7e5e4"
-              stroke-width="3"></circle>
-            <text
-              x="225"
-              y="220"
-              text-anchor="middle"
-              font-size="13"
-              font-weight="600"
-              fill="#e7e5e4">Fast by</text
-            >
-            <text
-              x="225"
-              y="237"
-              text-anchor="middle"
-              font-size="13"
-              font-weight="600"
-              fill="#e7e5e4">Default</text
-            >
-            <circle
-              cx="225"
-              cy="70"
-              r="60"
-              fill="#e7e5e4"
-              stroke="#d6d3d1"
-              stroke-width="2"></circle>
-            <text
-              x="225"
-              y="78"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="#1c1917">Measure</text
-            >
-            <circle
-              cx="380"
-              cy="225"
-              r="60"
-              fill="#a8a29e"
-              stroke="#78716c"
-              stroke-width="2"></circle>
-            <text
-              x="380"
-              y="233"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="#1c1917">Build</text
-            >
-            <circle
-              cx="225"
-              cy="380"
-              r="60"
-              fill="#78716c"
-              stroke="#57534e"
-              stroke-width="2"></circle>
-            <text
-              x="225"
-              y="388"
-              text-anchor="middle"
-              font-size="17"
-              font-weight="bold"
-              fill="white">Own</text
-            >
-            <circle
-              cx="70"
-              cy="225"
-              r="60"
-              fill="#57534e"
-              stroke="#44403c"
-              stroke-width="2"></circle>
-            <text
-              x="70"
-              y="218"
-              text-anchor="middle"
-              font-size="15"
-              font-weight="bold"
-              fill="white">Maintain</text
-            >
-            <text
-              x="70"
-              y="235"
-              text-anchor="middle"
-              font-size="15"
-              font-weight="bold"
-              fill="white">&amp; Refine</text
-            >
-            <defs>
-              <marker
-                id="arrowhead-cycle-dark"
-                markerWidth="10"
-                markerHeight="10"
-                refX="9"
-                refY="3"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3, 0 6" fill="#e7e5e4"></polygon>
-              </marker>
-            </defs>
-            <path
-              d="M 265 100 Q 320 140 340 185"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle-dark)"></path>
-            <path
-              d="M 340 265 Q 300 320 265 350"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle-dark)"></path>
-            <path
-              d="M 185 340 Q 140 300 110 265"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle-dark)"></path>
-            <path
-              d="M 110 185 Q 150 130 185 100"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-cycle-dark)"></path>
-          </svg>
+        <div class="my-6 py-6 flex justify-center dark:bg-black">
+          <Image
+            src={fbdImage}
+            alt="Fast by Default cycle diagram"
+            widths={[320, 450, 640]}
+            format="avif"
+            sizes="(max-width: 640px) 90vw, 450px"
+            class="w-full max-w-[450px] h-auto dark:invert dark:brightness-125"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div class="space-y-6 mb-10">
@@ -1032,303 +774,17 @@ import Layout from "../layouts/Layout.astro";
           fast even as they grow in size and complexity.
         </p>
 
-        <div class="my-12 flex justify-center">
-          <!-- Light Mode SVG -->
-          <svg
-            width="500"
-            height="500"
-            viewBox="0 0 500 500"
-            class="max-w-full h-auto dark:hidden"
-          >
-            <circle
-              cx="250"
-              cy="250"
-              r="60"
-              fill="#fafaf9"
-              stroke="#1c1917"
-              stroke-width="3"></circle>
-            <text
-              x="250"
-              y="245"
-              text-anchor="middle"
-              font-size="14"
-              font-weight="600"
-              fill="#1c1917">Fast by</text
-            >
-            <text
-              x="250"
-              y="262"
-              text-anchor="middle"
-              font-size="14"
-              font-weight="600"
-              fill="#1c1917">Default</text
-            >
-            <circle
-              cx="250"
-              cy="80"
-              r="55"
-              fill="#1c1917"
-              stroke="#292524"
-              stroke-width="2"></circle>
-            <text
-              x="250"
-              y="88"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Architect</text
-            >
-            <circle
-              cx="400"
-              cy="150"
-              r="55"
-              fill="#292524"
-              stroke="#44403c"
-              stroke-width="2"></circle>
-            <text
-              x="400"
-              y="158"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Implement</text
-            >
-            <circle
-              cx="400"
-              cy="350"
-              r="55"
-              fill="#44403c"
-              stroke="#57534e"
-              stroke-width="2"></circle>
-            <text
-              x="400"
-              y="358"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Verify</text
-            >
-            <circle
-              cx="100"
-              cy="350"
-              r="55"
-              fill="#57534e"
-              stroke="#78716c"
-              stroke-width="2"></circle>
-            <text
-              x="100"
-              y="358"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Observe</text
-            >
-            <circle
-              cx="100"
-              cy="150"
-              r="55"
-              fill="#78716c"
-              stroke="#a8a29e"
-              stroke-width="2"></circle>
-            <text
-              x="100"
-              y="158"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Refine</text
-            >
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="10"
-                refX="9"
-                refY="3"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3, 0 6" fill="#1c1917"></polygon>
-              </marker>
-            </defs>
-            <path
-              d="M 295 100 Q 340 110 355 135"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead)"></path>
-            <path
-              d="M 400 205 L 400 295"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead)"></path>
-            <path
-              d="M 355 365 Q 250 380 145 365"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead)"></path>
-            <path
-              d="M 100 295 L 100 205"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead)"></path>
-            <path
-              d="M 145 135 Q 190 110 205 100"
-              fill="none"
-              stroke="#1c1917"
-              stroke-width="3"
-              marker-end="url(#arrowhead)"></path>
-          </svg>
-          <!-- Dark Mode SVG -->
-          <svg
-            width="500"
-            height="500"
-            viewBox="0 0 500 500"
-            class="max-w-full h-auto hidden dark:block"
-          >
-            <circle
-              cx="250"
-              cy="250"
-              r="60"
-              fill="#1c1917"
-              stroke="#e7e5e4"
-              stroke-width="3"></circle>
-            <text
-              x="250"
-              y="245"
-              text-anchor="middle"
-              font-size="14"
-              font-weight="600"
-              fill="#e7e5e4">Fast by</text
-            >
-            <text
-              x="250"
-              y="262"
-              text-anchor="middle"
-              font-size="14"
-              font-weight="600"
-              fill="#e7e5e4">Default</text
-            >
-            <circle
-              cx="250"
-              cy="80"
-              r="55"
-              fill="#e7e5e4"
-              stroke="#d6d3d1"
-              stroke-width="2"></circle>
-            <text
-              x="250"
-              y="88"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="#1c1917">Architect</text
-            >
-            <circle
-              cx="400"
-              cy="150"
-              r="55"
-              fill="#d6d3d1"
-              stroke="#a8a29e"
-              stroke-width="2"></circle>
-            <text
-              x="400"
-              y="158"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="#1c1917">Implement</text
-            >
-            <circle
-              cx="400"
-              cy="350"
-              r="55"
-              fill="#a8a29e"
-              stroke="#78716c"
-              stroke-width="2"></circle>
-            <text
-              x="400"
-              y="358"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="#1c1917">Verify</text
-            >
-            <circle
-              cx="100"
-              cy="350"
-              r="55"
-              fill="#78716c"
-              stroke="#57534e"
-              stroke-width="2"></circle>
-            <text
-              x="100"
-              y="358"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Observe</text
-            >
-            <circle
-              cx="100"
-              cy="150"
-              r="55"
-              fill="#57534e"
-              stroke="#44403c"
-              stroke-width="2"></circle>
-            <text
-              x="100"
-              y="158"
-              text-anchor="middle"
-              font-size="16"
-              font-weight="bold"
-              fill="white">Refine</text
-            >
-            <defs>
-              <marker
-                id="arrowhead-dark"
-                markerWidth="10"
-                markerHeight="10"
-                refX="9"
-                refY="3"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3, 0 6" fill="#e7e5e4"></polygon>
-              </marker>
-            </defs>
-            <path
-              d="M 295 100 Q 340 110 355 135"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-dark)"></path>
-            <path
-              d="M 400 205 L 400 295"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-dark)"></path>
-            <path
-              d="M 355 365 Q 250 380 145 365"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-dark)"></path>
-            <path
-              d="M 100 295 L 100 205"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-dark)"></path>
-            <path
-              d="M 145 135 Q 190 110 205 100"
-              fill="none"
-              stroke="#e7e5e4"
-              stroke-width="3"
-              marker-end="url(#arrowhead-dark)"></path>
-          </svg>
+        <div class="my-6 py-6 flex justify-center bg-transparent dark:bg-black">
+          <Image
+            src={fbdImage2}
+            alt="Fast by Default practical steps"
+            widths={[320, 450, 640]}
+            format="avif"
+            sizes="(max-width: 640px) 90vw, 450px"
+            class="w-full max-w-[450px] h-auto dark:invert dark:brightness-125"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div class="space-y-6 mb-10">
@@ -1661,7 +1117,8 @@ import Layout from "../layouts/Layout.astro";
                     class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer"
                   />
                   <span class="text-stone-800 dark:text-stone-200 leading-snug"
-                    >Treat third-party libraries and external services as risky additions.</span
+                    >Treat third-party libraries and external services as risky
+                    additions.</span
                   >
                 </label>
               </li>
@@ -1742,8 +1199,7 @@ import Layout from "../layouts/Layout.astro";
                     class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer"
                   />
                   <span class="text-stone-800 dark:text-stone-200 leading-snug"
-                    >Require graceful degradation and resilient error
-                    handling.</span
+                    >Require graceful degradation and resilient error handling.</span
                   >
                 </label>
               </li>
@@ -1837,7 +1293,8 @@ import Layout from "../layouts/Layout.astro";
                     class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer"
                   />
                   <span class="text-stone-800 dark:text-stone-200 leading-snug"
-                    >Test complete flows, not only isolated components or endpoints.</span
+                    >Test complete flows, not only isolated components or
+                    endpoints.</span
                   >
                 </label>
               </li>
@@ -1859,7 +1316,8 @@ import Layout from "../layouts/Layout.astro";
                     class="mt-1 w-5 h-5 border-2 border-stone-800 dark:border-stone-300 rounded-none accent-stone-900 dark:accent-stone-100 cursor-pointer"
                   />
                   <span class="text-stone-800 dark:text-stone-200 leading-snug"
-                    >Use synthetic tests for consistency and production data for truth.</span
+                    >Use synthetic tests for consistency and production data for
+                    truth.</span
                   >
                 </label>
               </li>
@@ -2046,7 +1504,9 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <!-- Coming Soon -->
-    <section class="bg-white dark:bg-stone-900 py-16 border-t-2 border-stone-200 dark:border-stone-700">
+    <section
+      class="bg-white dark:bg-stone-900 py-16 border-t-2 border-stone-200 dark:border-stone-700"
+    >
       <div class="max-w-3xl mx-auto px-6 text-center">
         <h2
           class="font-display text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100 mb-6"
@@ -2056,12 +1516,13 @@ import Layout from "../layouts/Layout.astro";
         <p
           class="text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-6"
         >
-          Practical guides, starter templates, and tooling for Fast by Default are coming soon. These resources will help you put the model into practice on real projects.
+          Practical guides, starter templates, and tooling for Fast by Default
+          are coming soon. These resources will help you put the model into
+          practice on real projects.
         </p>
-        <p
-          class="text-lg text-stone-700 dark:text-stone-300 leading-relaxed"
-        >
-          Join the newsletter below to get updates as new content becomes available.
+        <p class="text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
+          Join the newsletter below to get updates as new content becomes
+          available.
         </p>
       </div>
     </section>
