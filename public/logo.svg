@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <clipPath id="mainClip">
+      <path d="M 20 30 Q 60 10, 150 20 Q 250 5, 350 20 Q 440 10, 480 30 Q 495 80, 485 120 Q 475 160, 400 175 Q 250 195, 100 175 Q 25 160, 15 120 Q 5 80, 20 30 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- White background -->
+  <rect x="0" y="0" width="500" height="200" fill="#ffffff"/>
+
+  <!-- Teal background shape -->
+  <path d="M 35 85 Q 50 45, 120 50 Q 200 40, 300 45 Q 400 40, 450 55 Q 480 70, 475 100 Q 470 140, 420 155 Q 300 175, 180 165 Q 80 155, 45 130 Q 25 115, 35 85 Z"
+        fill="#00d9e1" opacity="0.95"/>
+
+  <!-- Yellow decorative swirls - top left corner -->
+  <path d="M 25 70 Q 10 40, 40 25 Q 70 10, 95 35 Q 110 55, 85 70 Q 60 80, 45 60"
+        fill="none" stroke="#fdca15" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 50 45 Q 65 30, 85 45"
+        fill="none" stroke="#fdca15" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="38" cy="20" r="6" fill="#fdca15"/>
+
+  <!-- Yellow decorative swirls - top right corner -->
+  <path d="M 475 70 Q 490 40, 460 25 Q 430 10, 405 35 Q 390 55, 415 70 Q 440 80, 455 60"
+        fill="none" stroke="#fdca15" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 450 45 Q 435 30, 415 45"
+        fill="none" stroke="#fdca15" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="462" cy="20" r="6" fill="#fdca15"/>
+
+  <!-- Yellow decorative swirls - bottom left -->
+  <path d="M 30 130 Q 10 145, 25 165 Q 45 185, 80 170 Q 100 158, 85 140"
+        fill="none" stroke="#fdca15" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="35" cy="175" r="5" fill="#fdca15"/>
+
+  <!-- Yellow decorative swirls - bottom right -->
+  <path d="M 470 130 Q 490 145, 475 165 Q 455 185, 420 170 Q 400 158, 415 140"
+        fill="none" stroke="#fdca15" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="465" cy="175" r="5" fill="#fdca15"/>
+
+  <!-- Yellow flourish flowing from F -->
+  <path d="M 58 75 Q 45 60, 55 45 Q 70 35, 85 50"
+        fill="none" stroke="#fdca15" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Yellow swoosh under "Fast" -->
+  <path d="M 70 130 Q 100 145, 145 138 Q 180 132, 200 140"
+        fill="none" stroke="#fdca15" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Yellow flourish around "by" -->
+  <path d="M 195 95 Q 210 80, 230 85 Q 248 90, 242 105 Q 235 118, 215 112"
+        fill="none" stroke="#fdca15" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Yellow swoosh under "Default" -->
+  <path d="M 250 140 Q 320 155, 400 145 Q 440 138, 460 150"
+        fill="none" stroke="#fdca15" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Yellow flourish from final t -->
+  <path d="M 445 85 Q 460 70, 475 80 Q 485 95, 470 105"
+        fill="none" stroke="#fdca15" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Main decorative swirl left of F -->
+  <path d="M 55 105 Q 35 85, 50 65 Q 70 50, 90 70 Q 100 85, 80 95 Q 60 100, 55 85"
+        fill="none" stroke="#014362" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 65 78 Q 78 68, 88 80"
+        fill="none" stroke="#014362" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ===== "Fast" in decorative hand-lettered style ===== -->
+
+  <!-- F with flourish -->
+  <path d="M 75 70 L 75 125 M 75 70 Q 78 68, 115 70 M 75 95 Q 78 93, 100 95"
+        fill="none" stroke="#014362" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- F decorative curl at top -->
+  <path d="M 115 70 Q 125 65, 120 58 Q 112 52, 105 60"
+        fill="none" stroke="#014362" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- a with swirl -->
+  <path d="M 140 95 Q 120 95, 120 110 Q 120 125, 140 125 Q 155 125, 155 110 L 155 95 L 155 125"
+        fill="none" stroke="#014362" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- a interior swirl -->
+  <path d="M 135 108 Q 140 103, 148 108"
+        fill="none" stroke="#014362" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- s with curls -->
+  <path d="M 182 98 Q 165 93, 163 105 Q 162 112, 175 115 Q 188 118, 185 128 Q 180 135, 163 130"
+        fill="none" stroke="#014362" stroke-width="6" stroke-linecap="round"/>
+  <!-- s top flourish -->
+  <path d="M 182 98 Q 190 92, 188 85"
+        fill="none" stroke="#014362" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- t with cross flourish -->
+  <path d="M 200 80 L 200 125 Q 200 132, 210 130"
+        fill="none" stroke="#014362" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 190 95 Q 200 92, 215 95"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- ===== "by" decorative connector ===== -->
+  <path d="M 228 110 Q 235 100, 245 105 Q 252 112, 248 120"
+        fill="none" stroke="#014362" stroke-width="4" stroke-linecap="round"/>
+  <text x="230" y="122" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#014362" opacity="0.9">by</text>
+
+  <!-- ===== "Default" in decorative hand-lettered style ===== -->
+
+  <!-- D with curves -->
+  <path d="M 280 70 L 280 125 M 280 70 Q 320 70, 320 97.5 Q 320 125, 280 125"
+        fill="none" stroke="#014362" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- D interior decoration -->
+  <path d="M 290 90 Q 300 88, 305 97"
+        fill="none" stroke="#014362" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- e with swirl -->
+  <path d="M 328 110 L 350 110 Q 355 95, 340 93 Q 325 93, 325 110 Q 325 128, 345 125"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- f with flourish -->
+  <path d="M 365 78 Q 365 70, 375 70 Q 382 70, 382 78 L 382 125"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 372 95 L 392 95"
+        fill="none" stroke="#014362" stroke-width="4" stroke-linecap="round"/>
+  <!-- f top curl -->
+  <path d="M 375 70 Q 385 62, 392 68"
+        fill="none" stroke="#014362" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- a -->
+  <path d="M 412 95 Q 395 95, 395 110 Q 395 125, 412 125 Q 425 125, 425 110 L 425 95 L 425 125"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- u -->
+  <path d="M 435 95 L 435 115 Q 435 125, 445 125 Q 455 125, 455 115 L 455 95"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- l -->
+  <path d="M 468 75 L 468 125"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+  <!-- l bottom flourish -->
+  <path d="M 468 125 Q 475 130, 480 125"
+        fill="none" stroke="#014362" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- t with flourish -->
+  <path d="M 490 80 L 490 125 Q 492 132, 500 128"
+        fill="none" stroke="#014362" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 480 95 Q 490 92, 502 95"
+        fill="none" stroke="#014362" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Decorative swirl right of t -->
+  <path d="M 455 75 Q 470 60, 485 70 Q 495 80, 480 90"
+        fill="none" stroke="#014362" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Small accent dots -->
+  <circle cx="250" cy="75" r="4" fill="#014362" opacity="0.6"/>
+  <circle cx="95" cy="140" r="3" fill="#014362" opacity="0.5"/>
+  <circle cx="405" cy="140" r="3" fill="#014362" opacity="0.5"/>
+
+  <!-- Yellow accent dots scattered -->
+  <circle cx="150" cy="55" r="4" fill="#fdca15"/>
+  <circle cx="350" cy="55" r="4" fill="#fdca15"/>
+  <circle cx="250" cy="165" r="5" fill="#fdca15"/>
+
+</svg>
