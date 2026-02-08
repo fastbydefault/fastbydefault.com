@@ -16,7 +16,8 @@ const metaDescription = description || defaultDescription;
 
 const siteUrl = "https://fastbydefault.com";
 const canonicalUrl =
-  canonical || new URL(Astro.url.pathname, siteUrl).toString();
+  canonical ||
+  new URL(Astro.url.pathname, siteUrl).toString().replace(/\/$/, "");
 const ogImage = image || `${siteUrl}/og-image.png`;
 ---
 
