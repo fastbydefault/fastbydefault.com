@@ -85,6 +85,53 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     </script>
   </head>
   <body class="font-serif">
+    <!-- Book Promotion -->
+    <section
+      class="bg-stone-900 dark:bg-stone-950 border-b-4 border-double border-stone-900 dark:border-stone-100"
+    >
+      <div class="max-w-5xl mx-auto px-6 py-10 sm:py-14">
+        <p
+          class="text-center font-sans text-xs tracking-[0.3em] uppercase text-stone-400 dark:text-stone-500 mb-8"
+        >
+          Book Now Available &mdash; MEAP Early Access
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+          <a
+            href="https://www.manning.com/books/performance-engineering-in-practice"
+            class="shrink-0"
+          >
+            <img
+              src="https://images.manning.com/264/352/resize/book/e/271edd0-1a47-492d-bdc9-66f3c7ab785b/Odell-MEAP-HI.png"
+              alt="Performance Engineering In Practice book cover"
+              width="180"
+              height="240"
+              class="border-2 border-stone-700 shadow-lg shadow-black/30"
+            />
+          </a>
+          <div class="text-center sm:text-left">
+            <h2
+              class="font-display text-3xl sm:text-4xl font-bold text-stone-100 tracking-tight mb-4"
+            >
+              Performance Engineering In Practice
+            </h2>
+            <p
+              class="text-stone-300 dark:text-stone-400 text-lg leading-relaxed mb-6 max-w-xl"
+            >
+              The book that shows you how to put Fast by Default into action.
+              Learn how to engineer speed and responsiveness into web, mobile,
+              and desktop applications from the ground up.
+            </p>
+            <a
+              href="https://www.manning.com/books/performance-engineering-in-practice"
+              class="inline-block px-8 py-3 bg-stone-100 text-stone-900 font-sans font-semibold text-sm tracking-wide uppercase hover:bg-white transition-colors border-2 border-stone-100 hover:border-white"
+            >
+              Get the Book
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <slot />
 
     <!-- Newsletter Section -->
