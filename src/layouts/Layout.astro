@@ -71,7 +71,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     <script async src="https://plausible.io/js/pa-DaVyYJLEfT9p_2vefAePa.js"
     ></script>
     <script>
-      (window.plausible =
+      ((window.plausible =
         window.plausible ||
         function () {
           (plausible.q = plausible.q || []).push(arguments);
@@ -80,7 +80,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           plausible.init ||
           function (i) {
             plausible.o = i || {};
-          });
+          }));
       plausible.init();
     </script>
   </head>
@@ -92,10 +92,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
       <div
         class="max-w-5xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center gap-5 sm:gap-8"
       >
-        <a
-          href="https://hubs.la/Q044cvg50"
-          class="shrink-0"
-        >
+        <a href="https://hubs.la/Q044cvg50" class="shrink-0">
           <img
             src="https://images.manning.com/264/352/resize/book/e/271edd0-1a47-492d-bdc9-66f3c7ab785b/Odell-MEAP-HI.png"
             alt="Performance Engineering In Practice book cover"
@@ -108,16 +105,18 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           <p
             class="font-sans text-xs tracking-[0.2em] uppercase text-stone-400 dark:text-stone-500 mb-1"
           >
-            New Book &mdash; MEAP Early Access
+            New Book: MEAP Early Access
           </p>
           <h2
             class="font-display text-2xl font-bold text-stone-100 tracking-tight mb-1"
           >
             Performance Engineering In Practice
           </h2>
-          <p class="text-stone-300 dark:text-stone-400 text-sm leading-relaxed mb-2">
+          <p
+            class="text-stone-300 dark:text-stone-400 text-sm leading-relaxed mb-2"
+          >
             The book that shows you how to put Fast by Default into action
-            across web, mobile, and desktop applications.
+            across web, backend, mobile, and desktop applications.
           </p>
           <p
             class="font-sans text-xs font-semibold tracking-wide uppercase text-amber-400"
