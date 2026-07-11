@@ -33,9 +33,9 @@ It shows up most clearly at the dependency level:
 ```javascript
 // Looks harmless enough...
 
-import { format } from 'date-fns';  // about 67KB
-import { debounce } from 'lodash';  // about 71KB
-import { Chart } from 'chart.js';   // about 188KB
+import { format } from "date-fns"; // about 67KB
+import { debounce } from "lodash"; // about 71KB
+import { Chart } from "chart.js"; // about 188KB
 
 // ...but 6 months later the bundle is 2MB and nobody remembers why
 ```

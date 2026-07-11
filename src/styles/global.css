@@ -1,8 +1,13 @@
 @import "tailwindcss";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/playfair-display/wght-italic.css";
+@import "@fontsource-variable/lora";
+@import "@fontsource-variable/lora/wght-italic.css";
+@import "@fontsource-variable/inter";
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-serif: "Lora", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Playfair Display Variable", Georgia, serif;
+  --font-serif: "Lora Variable", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
 }

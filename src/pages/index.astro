@@ -20,6 +20,12 @@ import fbdImage2 from "../images/fbd2.png";
       transform: scaleX(1);
     }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    #scroll-progress {
+      display: none;
+    }
+  }
 </style>
 
 <Layout title="Fast by Default">
@@ -120,7 +126,11 @@ import fbdImage2 from "../images/fbd2.png";
     }
   </script>
 
-  <main class="min-h-screen bg-stone-50 dark:bg-stone-950">
+  <main
+    id="main"
+    tabindex="-1"
+    class="min-h-screen bg-stone-50 dark:bg-stone-950"
+  >
     <!-- Scroll Progress Indicator -->
     <div
       id="scroll-progress"
@@ -146,6 +156,8 @@ import fbdImage2 from "../images/fbd2.png";
             id="mobile-menu-btn"
             class="sm:hidden text-stone-900 dark:text-stone-100"
             aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -681,7 +693,8 @@ import fbdImage2 from "../images/fbd2.png";
             </h3>
             <p class="text-stone-700 dark:text-stone-300 leading-relaxed">
               Start by understanding what users actually experience, then work
-              out where speed matters most and what performance issues are costing you.
+              out where speed matters most and what performance issues are
+              costing you.
             </p>
           </div>
 
@@ -1553,10 +1566,17 @@ import fbdImage2 from "../images/fbd2.png";
       }
     }
 
+    // Respect users who prefer reduced motion
+    const prefersReducedMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
     // Smooth scroll to top
     function scrollToTop(e: Event) {
       e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion() ? "auto" : "smooth",
+      });
     }
 
     // Mobile menu toggle
@@ -1565,13 +1585,15 @@ import fbdImage2 from "../images/fbd2.png";
       const mobileMenu = document.getElementById("mobile-menu");
 
       menuBtn?.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
+        const nowHidden = mobileMenu?.classList.toggle("hidden");
+        menuBtn.setAttribute("aria-expanded", String(nowHidden === false));
       });
 
       // Close menu when clicking a link
       document.querySelectorAll(".mobile-nav-link").forEach((link) => {
         link.addEventListener("click", () => {
           mobileMenu?.classList.add("hidden");
+          menuBtn?.setAttribute("aria-expanded", "false");
         });
       });
     }
@@ -1673,19 +1695,35 @@ import fbdImage2 from "../images/fbd2.png";
           const href = anchor.getAttribute("href");
           if (href && href !== "#") {
             const target = document.querySelector(href);
-            if (target) {
-              target.scrollIntoView({ behavior: "smooth" });
+            if (target instanceof HTMLElement) {
+              target.scrollIntoView({
+                behavior: prefersReducedMotion() ? "auto" : "smooth",
+              });
+              // Move keyboard focus to the target so it follows the scroll
+              target.setAttribute("tabindex", "-1");
+              target.focus({ preventScroll: true });
             }
           }
         });
       });
     }
 
-    // Event listeners
-    window.addEventListener("scroll", () => {
-      updateStickyNav();
-      updateBackToTop();
-    });
+    // Event listeners — passive + rAF-throttled to keep scrolling smooth
+    let scrollTicking = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!scrollTicking) {
+          scrollTicking = true;
+          requestAnimationFrame(() => {
+            updateStickyNav();
+            updateBackToTop();
+            scrollTicking = false;
+          });
+        }
+      },
+      { passive: true },
+    );
 
     document
       .getElementById("back-to-top")

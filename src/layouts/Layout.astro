@@ -1,5 +1,6 @@
 ---
 import Analytics from "@vercel/analytics/astro";
+import { Image } from "astro:assets";
 import "../styles/global.css";
 
 interface Props {
@@ -25,7 +26,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta Tags -->
@@ -45,6 +46,12 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Fast by Default — a performance engineering framework by Den Odell"
+    />
     <meta property="og:site_name" content="Fast by Default" />
     <meta property="og:locale" content="en_US" />
 
@@ -54,18 +61,18 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={metaDescription} />
     <meta name="twitter:image" content={ogImage} />
+    <meta
+      name="twitter:image:alt"
+      content="Fast by Default — a performance engineering framework by Den Odell"
+    />
     <meta name="twitter:creator" content="@denodell" />
 
-    <!-- Favicon -->
+    <!-- Favicon & App Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fonts are self-hosted via @fontsource-variable (see src/styles/global.css) -->
 
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-DaVyYJLEfT9p_2vefAePa.js"
@@ -85,6 +92,14 @@ const ogImage = image || `${siteUrl}/og-image.png`;
     </script>
   </head>
   <body class="font-serif">
+    <!-- Skip to content -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-stone-900 focus:text-white focus:font-sans focus:text-sm"
+    >
+      Skip to content
+    </a>
+
     <!-- Book Promotion -->
     <section
       class="bg-stone-900 dark:bg-stone-950 border-b-4 border-double border-stone-900 dark:border-stone-100"
@@ -93,11 +108,15 @@ const ogImage = image || `${siteUrl}/og-image.png`;
         class="max-w-5xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center gap-5 sm:gap-8"
       >
         <a href="https://hubs.la/Q044cvg50" class="shrink-0">
-          <img
+          <Image
             src="https://images.manning.com/264/352/resize/book/e/271edd0-1a47-492d-bdc9-66f3c7ab785b/Odell-MEAP-HI.png"
             alt="Performance Engineering In Practice book cover"
-            width="100"
-            height="133"
+            width={100}
+            height={133}
+            densities={[1, 2]}
+            format="avif"
+            loading="eager"
+            fetchpriority="low"
             class="border border-stone-700"
           />
         </a>
@@ -107,11 +126,11 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           >
             New Book: MEAP Early Access
           </p>
-          <h2
+          <p
             class="font-display text-2xl font-bold text-stone-100 tracking-tight mb-1"
           >
             Performance Engineering In Practice
-          </h2>
+          </p>
           <p
             class="text-stone-300 dark:text-stone-400 text-sm leading-relaxed mb-2"
           >
@@ -202,9 +221,9 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           >
         </p>
 
-        <h1 class="text-sm font-bold text-stone-100 mb-1">
+        <h2 class="text-sm font-bold text-stone-100 mb-1">
           Projects by Den Odell
-        </h1>
+        </h2>
         <p class="text-sm">
           <a
             href="https://denodell.com?utm_source=fastbydefault&utm_medium=website&utm_campaign=footer_projects"

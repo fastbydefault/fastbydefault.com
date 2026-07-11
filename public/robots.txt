@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://fastbydefault.com/sitemap.xml
+Sitemap: https://fastbydefault.com/sitemap-index.xml
