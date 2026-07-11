@@ -1,10 +1,10 @@
-import { defineConfig } from 'astro/config';
-import tailwindcss from '@tailwindcss/vite';
-import sitemap from '@astrojs/sitemap';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fastbydefault.com',
+  site: "https://fastbydefault.com",
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
