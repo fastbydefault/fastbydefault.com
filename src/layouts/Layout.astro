@@ -2,6 +2,7 @@
 import Analytics from "@vercel/analytics/astro";
 import { Image } from "astro:assets";
 import "../styles/global.css";
+import bookCover from "../images/fast-by-default.jpg";
 
 interface Props {
   title: string;
@@ -109,8 +110,8 @@ const ogImage = image || `${siteUrl}/og-image.png`;
       >
         <a href="https://hubs.la/Q044cvg50" class="shrink-0">
           <Image
-            src="https://images.manning.com/264/352/resize/book/e/271edd0-1a47-492d-bdc9-66f3c7ab785b/Odell-MEAP-HI.png"
-            alt="Performance Engineering In Practice book cover"
+            src={bookCover}
+            alt="Fast by Default book cover"
             width={100}
             height={133}
             densities={[1, 2]}
@@ -129,7 +130,7 @@ const ogImage = image || `${siteUrl}/og-image.png`;
           <p
             class="font-display text-2xl font-bold text-stone-100 tracking-tight mb-1"
           >
-            Performance Engineering In Practice
+            Fast by Default: Practical Performance Engineering
           </p>
           <p
             class="text-stone-300 dark:text-stone-400 text-sm leading-relaxed mb-2"
