@@ -11,3 +11,14 @@
   --font-serif: "Lora Variable", Georgia, serif;
   --font-sans: "Inter Variable", system-ui, sans-serif;
 }
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+}
