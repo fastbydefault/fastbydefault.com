@@ -6,10 +6,18 @@ import fbdImage2 from "../images/fbd2.png";
 ---
 
 <style>
-  #scroll-progress {
-    animation: scroll-progress linear;
-    animation-timeline: scroll(root);
-    transform-origin: left;
+  @media (prefers-reduced-motion: no-preference) {
+    #scroll-progress {
+      animation: scroll-progress linear;
+      animation-timeline: scroll(root);
+      transform-origin: left;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #scroll-progress {
+      display: none;
+    }
   }
 
   @keyframes scroll-progress {
@@ -18,12 +26,6 @@ import fbdImage2 from "../images/fbd2.png";
     }
     to {
       transform: scaleX(1);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    #scroll-progress {
-      display: none;
     }
   }
 </style>
@@ -141,7 +143,7 @@ import fbdImage2 from "../images/fbd2.png";
     <!-- Sticky Navigation -->
     <nav
       id="sticky-nav"
-      class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-stone-900/95 backdrop-blur-sm border-b border-stone-200 dark:border-stone-700 z-40 transform -translate-y-full transition-transform duration-300"
+      class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-stone-900/95 backdrop-blur-sm border-b border-stone-200 dark:border-stone-700 z-40 transform -translate-y-full motion-safe:transition-transform motion-safe:duration-300"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3">
         <div class="flex items-center justify-between">
@@ -154,7 +156,7 @@ import fbdImage2 from "../images/fbd2.png";
           <!-- Mobile Menu Button -->
           <button
             id="mobile-menu-btn"
-            class="sm:hidden text-stone-900 dark:text-stone-100"
+            class="sm:hidden p-2 -m-2 text-stone-900 dark:text-stone-100"
             aria-label="Toggle menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -211,27 +213,27 @@ import fbdImage2 from "../images/fbd2.png";
           <div class="flex flex-col gap-2 text-sm font-sans">
             <a
               href="#philosophy"
-              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded"
+              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 px-3 rounded"
               data-section="philosophy">Philosophy</a
             >
             <a
               href="#principles"
-              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded"
+              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 px-3 rounded"
               data-section="principles">Principles</a
             >
             <a
               href="#cycle"
-              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded"
+              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 px-3 rounded"
               data-section="cycle">Cycle</a
             >
             <a
               href="#steps"
-              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded"
+              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 px-3 rounded"
               data-section="steps">Steps</a
             >
             <a
               href="#checklist"
-              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-2 px-3 rounded"
+              class="mobile-nav-link text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors py-3 px-3 rounded"
               data-section="checklist">Checklist</a
             >
           </div>
@@ -242,7 +244,7 @@ import fbdImage2 from "../images/fbd2.png";
     <!-- Back to Top Button -->
     <button
       id="back-to-top"
-      class="fixed bottom-8 right-8 w-12 h-12 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-none shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-40 hover:bg-stone-700 dark:hover:bg-stone-300 flex items-center justify-center"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 rounded-none shadow-lg opacity-0 pointer-events-none transition-[opacity,background-color,scale] duration-300 z-40 hover:bg-stone-700 dark:hover:bg-stone-300 motion-safe:active:scale-[0.96] flex items-center justify-center"
       aria-label="Back to top"
     >
       <svg

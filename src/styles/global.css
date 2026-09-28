@@ -11,3 +11,17 @@
   --font-serif: "Lora Variable", Georgia, serif;
   --font-sans: "Inter Variable", system-ui, sans-serif;
 }
+
+@layer base {
+  /* Even out line lengths in headings and short standalone lines */
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  blockquote p,
+  figcaption {
+    text-wrap: pretty;
+  }
+}
